@@ -46,6 +46,13 @@ p {
     border: 1px solid var(--primary);
     border-radius: 1rem;
 }
+.header-center-box a img {
+    width: 2rem;
+    margin-top: -1rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
 #header-image {
     width: min(15rem, 70%);
     margin-top: -6rem;
@@ -121,6 +128,35 @@ p {
     margin: 0.6rem 0.5rem;
     border-radius: 0.5rem;
     border: 1px solid var(--primary);
+}
+
+/* Light mode */
+@media (prefers-color-scheme: dark) {
+    body {
+      background-color: rgb(240, 240, 240);
+      color: black;
+      font-weight: lighter;
+    }
+    #bg-text {
+        color: rgb(240, 223, 204);
+    }
+    .bg-streak {
+        background: linear-gradient(90deg, var(--primary) 0%, #ff9e0c 100%);
+    }
+    :root {
+        --primary: #c24c08;
+        --gray1: #ececec;
+        --gray2: #e4e4e4;
+    }
+    .header-sub-title {
+        border: 1px solid var(--primary);
+    }
+    .project-link {
+        color: black;
+    }
+    .portfolio-item {
+        border: 1px solid var(--primary);
+    }
 }
 
 /* Other elements */
