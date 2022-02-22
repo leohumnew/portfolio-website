@@ -22,6 +22,10 @@ p {
     color: rgb(22, 21, 12);
     font-size: 5em;
     top: -1250px;
+    word-wrap: break-word;
+    width: 110%;
+    user-select: none;
+    -webkit-user-select: none;
 }
 .bg-streak-container {
     transform: rotate(var(--angle));
@@ -91,26 +95,48 @@ p {
 }
 
 /* Body elements */
+#desktop-portfolio {
+    display: none;
+}
+.section {
+    opacity: 0;
+    animation-name: slideIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
 .title-box {
     background-color: var(--gray1);
     width: min(70%, 30rem);
-    margin: 1rem auto;
+    margin: 0 auto;
     text-align: center;
     padding: 10px;
     border: 1px solid var(--primary);
     border-radius: 1rem;
 }
-.portfolio-item {
-    width: min(90%, 45rem);
+.portfolio-header {
+    width: min(90%, 42rem);
     border: 1px solid var(--gray2);
     border-radius: 1rem;
+    background-color: var(--gray1) !important;
+    margin: 0.8rem auto 0 auto;
+}
+.accordion > .frame.active > .heading {
+    border-radius: 1rem 1rem 0 0;
+    border-bottom-width: 0;
+    margin-bottom: -1px;
+}
+.portfolio-item {
+    width: min(90%, 42rem);
+    border: 1px solid var(--gray2);
     background-color: var(--gray1);
     text-align: center;
     padding: 1rem;
-    margin: 2rem auto;
+    margin: 0 auto;
+    border-radius: 0 0 1rem 1rem;
+    border-top-width: 0;
 }
 .portfolio-item img {
-    width: min(60%, 22rem);
+    width: min(95%, 28rem);
     margin-bottom: 1rem;
     border: 5px solid var(--gray2);
     border-radius: 1rem;
@@ -130,15 +156,29 @@ p {
     border: 1px solid var(--primary);
 }
 
+@media (min-width: 768px) {
+    .portfolio-item {
+        margin: 2rem auto;
+        border-radius: 1rem;
+        border-bottom: 1px solid var(--gray2);
+    }
+    .accordion {
+        display: none;
+    }
+    #desktop-portfolio {
+        display: initial;
+    }
+}
+
 /* Light mode */
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
     body {
       background-color: rgb(240, 240, 240);
       color: black;
       font-weight: lighter;
     }
     #bg-text {
-        color: rgb(240, 223, 204);
+        color: rgb(243, 230, 214);
     }
     .bg-streak {
         background: linear-gradient(90deg, var(--primary) 0%, #ff9e0c 100%);
@@ -166,4 +206,9 @@ p {
 .no-space {
     height: 0;
     overflow: visible;
+}
+
+@keyframes slideIn {
+    0% {transform: translateY(50%);opacity: 0;}
+    100% {transform: translateY(0%);opacity: 1;}
 }
