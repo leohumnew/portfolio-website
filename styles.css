@@ -18,14 +18,13 @@ p {
 }
 
 /* Background elements */
-#bg-text {
-    color: rgb(22, 21, 12);
-    font-size: 5em;
-    top: -1250px;
-    word-wrap: break-word;
-    width: 110%;
-    user-select: none;
-    -webkit-user-select: none;
+#bg {
+    position: absolute;
+    width: 100%;
+    height: 200%;
+    background-image: url("bg2.png");
+    background-repeat: repeat;
+    background-size: 30rem;
 }
 .bg-streak-container {
     transform: rotate(var(--angle));
