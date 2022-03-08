@@ -22,7 +22,7 @@ p {
     position: absolute;
     width: 100%;
     height: 200%;
-    background-image: url("bg2.png");
+    background-image: url("bg.png");
     background-repeat: repeat;
     background-size: 30rem;
 }
@@ -43,7 +43,7 @@ p {
 .header-center-box {
     background-color: var(--gray1);
     width: min(70%, 30rem);
-    margin: 10rem auto;
+    margin: 125px auto 5px auto;
     text-align: center;
     padding: 10px;
     border: 1px solid var(--primary);
@@ -102,6 +102,7 @@ p {
     animation-name: slideIn;
     animation-duration: 1s;
     animation-fill-mode: forwards;
+    margin-top: 75px;
 }
 .title-box {
     background-color: var(--gray1);
