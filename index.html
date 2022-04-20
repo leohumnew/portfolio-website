@@ -43,30 +43,30 @@
         </div>
 
         <header>
-            <div prx="-1" class="header-center-box">
+            <div class="header-center-box">
                 <picture>
                     <source srcset="face.webp" type="image/webp">
                     <img src="face.png" id="header-image">
                 </picture>
                 <h1 id="header-text">Hi, I'm Leo</h1>
                 <a href="https://github.com/Hubbit200"><img src="github.png"></a>
-                <a href=""><img src="email.png"></a>
-                <a href="https://linkedin.com/in/leo-humphreys-newman-57a703188"><img src="linkedin.png"></a>
-                <div class="header-sub-title" style="margin-left: -4rem;"><div><img src="phone.png"><h2 class="cell">programming</h2></div></div>
-                <div class="header-sub-title" style="margin-right: -4rem;"><div><img src="envelope.png"><h2>web  design</h2></div></div>
-                <div class="header-sub-title" style="margin-left: -4rem; margin-bottom: -2rem;"><div><img src="camera.png"><h2>video editing</h2></div></div>
+                <a href="#ctct"><img src="email.png"></a>
+                <a href="https://www.linkedin.com/in/leohumnew"><img src="linkedin.png"></a>
+                <div class="header-sub-title" style="margin-left: -3rem; animation-name: slideInLeft;"><div><img src="phone.png"><h2 class="cell">programming</h2></div></div>
+                <div class="header-sub-title" style="margin-right: -3rem; animation-name: slideInRight;"><div><img src="envelope.png"><h2>web  design</h2></div></div>
+                <div class="header-sub-title" style="margin-left: -3rem; margin-bottom: -1.75rem; animation-name: slideInLeft;"><div><img src="camera.png"><h2>video editing</h2></div></div>
             </div>
         </header>
         
         <main>
-            <div class="section">
-                <div class="title-box">
+            <div class="section-anim" style="margin-top: 115px;">
+                <div class="title-box" style="margin-bottom: 0;">
                     <h2>Projects</h2>
                 </div>
                 <div data-role="accordion" data-show-active="false">
                     <div class="frame">
                         <div class="heading portfolio-header"><h3>Spotify History Analyzer</h3></div>
-                        <div class="content portfolio-item portfolio-mob">
+                        <div class="content portfolio-item styled-box">
                             <picture>
                                 <source srcset="HistViewer.webp" type="image/webp">
                                 <img src="HistViewer.png">
@@ -78,7 +78,7 @@
                     </div>
                     <div class="frame">
                         <div class="heading portfolio-header"><h3>Chat Analyzer</h3></div>
-                        <div class="content portfolio-item">
+                        <div class="content portfolio-item styled-box">
                             <picture>
                                 <source srcset="ChatAnalyzer.webp" type="image/webp">
                                 <img src="ChatAnalyzer.png">
@@ -89,7 +89,7 @@
                     </div>
                     <div class="frame">
                         <div class="heading portfolio-header"><h3>This Portfolio Website</h3></div>
-                        <div class="content portfolio-item portfolio-mob">
+                        <div class="content portfolio-item styled-box">
                             <picture>
                                 <source srcset="PortfolioWebsite.webp" type="image/webp">
                                 <img src="PortfolioWebsite.png">
@@ -98,39 +98,108 @@
                             <a href="https://github.com/Hubbit200/portfolio-website" class="project-link">Github</a>
                         </div>
                     </div>
+                    <div class="frame">
+                        <div class="heading portfolio-header"><h3>CS50 and SANS</h3></div>
+                        <div class="content portfolio-item styled-box">
+                            <picture>
+                                <source srcset="Courses.webp" type="image/webp">
+                                <img src="Courses.png">
+                            </picture>
+                            <p>Originally completing Cyberstart's cybersecurity course, I've then gone on to complete SANS Foundations, CS50x, and CS50ai.</p>
+                            <a href="https://courses.edx.org/certificates/da375646756c45f6bb2c22e87107002d" class="project-link">CS50x</a>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="row" id="desktop-portfolio">
-                    <div class="cell portfolio-item">
-                        <img src="HistViewer1.png">
+                <div id="desktop-portfolio">
+                    <div class="portfolio-item styled-box">
+                        <picture>
+                            <source srcset="HistViewer.webp" type="image/webp">
+                            <img src="HistViewer.png">
+                        </picture>
                         <h3>Spotify History Analyzer</h3>
-                        <p>I decided to make this after noticing the lack of any visible statistics about my Spotify listen history. While initially a Java-based downloadable, I then ported it to Javascript and made a web version to increade usability. All the data processing is client-side to preserve privacy.</p>
+                        <p>I decided to make this after noticing the lack of any visible statistics about my Spotify listen history. While initially a Java-based downloadable, I then ported it to Javascript and made a web version to make it easier to use. All the data processing is client-side to maintain privacy.</p>
                         <a href="https://github.com/Hubbit200/spotify-history-parser-web" class="project-link">Github</a>
                         <a href="https://leohumnew.com/spotify" class="project-link">Try it out!</a>
                     </div>
-                    <div class="cell portfolio-item">
-                        <img src="ChatAnalyzer.png">
+                    <div class="portfolio-item styled-box">
+                        <picture>
+                            <source srcset="ChatAnalyzer.webp" type="image/webp">
+                            <img src="ChatAnalyzer.png">
+                        </picture>
                         <h3>Chat Analyzer</h3>
-                        <p>I decided to make this after noticing the lack of any visible statistics about my Spotify listen history. While initially a Java-based downloadable, I then ported it to Javascript and made a web version to increade usability. All the data processing is client-side to preserve privacy.</p>
+                        <p>Wanting a way to see statistics about messages sent in various chat apps, I made this program which shows information about chats imported from WhatsApp, Telegram, or Instagram - such as the number of messages per user, over time, and the most common words used.</p>
                         <a href="https://github.com/Hubbit200/chat-analyzer" class="project-link">Github</a>
+                    </div>
+                    <div class="portfolio-item styled-box">
+                        <picture>
+                            <source srcset="PortfolioWebsite.webp" type="image/webp">
+                            <img src="PortfolioWebsite.png">
+                        </picture>
+                        <h3>This Portfolio Website</h3>
+                        <p>Wanting to update my old WordPress website, I coded this one from scratch in HTML and CSS. It follows a mobile-first, accessible, design approach, and doing everything possible to shorten load times. It uses some components from the Parralax and Metro libraries.</p>
+                        <a href="https://github.com/Hubbit200/portfolio-website" class="project-link">Github</a>
+                    </div>
+                    <div class="portfolio-item styled-box">
+                        <picture>
+                            <source srcset="Courses.webp" type="image/webp">
+                            <img src="Courses.png">
+                        </picture>
+                        <h3>CS50 and SANS</h3>
+                        <p>Originally completing Cyberstart's cybersecurity course, I've then gone on to complete SANS Foundations, CS50x, and CS50ai, learning everything from the foundations of computing and its physical components to Artificial Intelligence with Python and cyberdefense processes.</p>
+                        <a href="https://courses.edx.org/certificates/da375646756c45f6bb2c22e87107002d" class="project-link">CS50x</a>
                     </div>
                 </div>
             </div>
+
             <div class="section">
                 <div class="title-box">
                     <h2>About Me</h2>
                 </div>
-            </div>
-            <div class="section">
-                <div class="title-box">
-                    <h2>Languages</h2>
+                <div class="styled-box" style="margin-bottom: 5px;">
+                    <h4>- A motivated and fast learner</h4>
+                    <h4>- Friendly and easy to work with</h4>
+                    <h4>- Bilingual spanish-english</h4>
+                </div>
+                <div class="styled-box">
+                    <p>Hi, I'm Leo Humphreys Newman, a developer and video editor - and an enthusiastic learner! I enjoy reading, immersing myself in VR, socializing, learning about topics that interest me, and of course experimenting with coding projects - some of which you can see mentioned here on my website.</p>
                 </div>
             </div>
+
             <div class="section">
                 <div class="title-box">
-                    <h2>Contact</h2>
+                    <h2>Experience</h2>
                 </div>
-                <h3>Contact me at leo<!-- spam@gmail.com -->humnew03@gmai<span class="antispam">spam@yahoo.com</span>l.com</h3>
+                <div class="styled-box languages-box">
+                    <div class="row">
+                        <img class="cell" src="python.png">
+                        <img class="cell" src="java.png">
+                        <img class="cell" src="html.png">
+                        <img class="cell" src="js.png">
+                    </div>
+                    <div class="row">
+                        <img class="cell" src="css.png">
+                        <img class="cell" src="wp.png">
+                        <img class="cell" src="premiere.png">
+                        <img class="cell" src="excel.png">
+                    </div>
+                    <div class="row">
+                        <img class="cell" src="ps.png">
+                        <img class="cell" src="csharp.png">
+                        <img class="cell" src="blender.png">
+                        <img class="cell" src="ue.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" style="margin-bottom: 30px;">
+                <div class="title-box" id="ctct">
+                    <h2>Cont<!-- spam -->act</h2>
+                </div>
+                <div class="styled-box">
+                    <p>Feel free to email me at:<br><i>leo<!-- spam@gmail.com -->humnew03@gmai<span class="antispam">spam@yahoo.com</span>l.com</i><br><br>
+                        Or connect with me on <a href="https://www.linkedin.com/in/leohumnew">LinkedIn</a></p>
+                </div>
             </div>
         </main>
         
