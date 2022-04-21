@@ -13,7 +13,7 @@
     <body>
         <div prx="10" id="bg"></div>
         <div prx="3" class="no-space">
-            <div class="bg-streak-container" style="--angle:20deg">
+            <div class="bg-streak-container" style="--angle:20deg; margin-top:0px">
                 <div class="row">
                     <div class="cell-2 bg-streak"></div>
                     <div class="cell-7 bg-streak"></div>
@@ -29,12 +29,23 @@
                     <div class="cell bg-streak"></div>
                 </div>
             </div>
-            <div class="bg-streak-container" style="--angle:-25deg; margin-top: 700px;">
+            <div class="bg-streak-container" style="--angle:-20deg; --top:600px;">
                 <div class="bg-streak"></div>
                 <div class="row">
                     <div class="cell bg-streak"></div>
                     <div class="cell bg-streak"></div>
                 </div>
+                <div class="row">
+                    <div class="cell-5 bg-streak"></div>
+                    <div class="cell bg-streak"></div>
+                </div>
+            </div>
+            <div class="bg-streak-container" style="--angle:10deg; --top:400px;">
+                <div class="row">
+                    <div class="cell bg-streak"></div>
+                    <div class="cell bg-streak"></div>
+                </div>
+                <div class="bg-streak"></div>
                 <div class="row">
                     <div class="cell-5 bg-streak"></div>
                     <div class="cell bg-streak"></div>
@@ -63,7 +74,7 @@
                 <div class="title-box" style="margin-bottom: 0;">
                     <h2>Projects</h2>
                 </div>
-                <div data-role="accordion" data-show-active="false">
+                <div class="accordion" data-role="accordion" data-show-active="false">
                     <div class="frame">
                         <div class="heading portfolio-header"><h3>Spotify History Analyzer</h3></div>
                         <div class="content portfolio-item styled-box">
@@ -71,7 +82,7 @@
                                 <source srcset="HistViewer.webp" type="image/webp">
                                 <img src="HistViewer.png">
                             </picture>
-                            <p>I decided to make this after noticing the lack of any visible statistics about my Spotify listen history. While initially a Java-based downloadable, I then ported it to Javascript and made a web version to make it easier to use. All the data processing is client-side to maintain privacy.</p>
+                            <p>I decided to make this after noticing the lack of any visible statistics about my Spotify listen history. Initially a Java-based downloadable, I then ported it to Javascript and made a web version to make it easier to use. All the data processing is client-side to maintain privacy.</p>
                             <a href="https://github.com/Hubbit200/spotify-history-parser-web" class="project-link">Github</a>
                             <a href="https://leohumnew.com/spotify" class="project-link">Try it out!</a>
                         </div>
@@ -83,7 +94,7 @@
                                 <source srcset="ChatAnalyzer.webp" type="image/webp">
                                 <img src="ChatAnalyzer.png">
                             </picture>
-                            <p>Wanting a way to see statistics about messages sent in various chat apps, I made this program which shows information about chats imported from WhatsApp, Telegram, or Instagram - such as the number of messages per user, over time, and the most common words used.</p>
+                            <p>Wanting a way to see statistics about messages sent in various apps, I made this program which shows information about chats imported from WhatsApp, Telegram, or Instagram - such as the number of messages per user, over time, and the most common words used.</p>
                             <a href="https://github.com/Hubbit200/chat-analyzer" class="project-link">Github</a>
                         </div>
                     </div>
@@ -105,8 +116,32 @@
                                 <source srcset="Courses.webp" type="image/webp">
                                 <img src="Courses.png">
                             </picture>
-                            <p>Originally completing Cyberstart's cybersecurity course, I've then gone on to complete SANS Foundations, CS50x, and CS50ai.</p>
+                            <p>Originally completing Cyberstart's cybersecurity course, I've then gone on to complete SANS Foundations, CS50x, and CS50ai, learning everything from the foundations of computing and its physical components to Artificial Intelligence and cyberdefense processes.</p>
                             <a href="https://courses.edx.org/certificates/da375646756c45f6bb2c22e87107002d" class="project-link">CS50x</a>
+                        </div>
+                    </div>
+                    <div class="frame">
+                        <div class="heading portfolio-header"><h3>Game projects</h3></div>
+                        <div class="content portfolio-item styled-box">
+                            <picture>
+                                <source srcset="Games.webp" type="image/webp">
+                                <img src="Games.png">
+                            </picture>
+                            <p>Over time I've built a large variety of demos in Unreal Engine, Unity and Processing, using C#, Java, and UE Blueprints: procedural runners and open world games, a gravitational simulator, archviz project, VR experience, multiplayer fighters, a minigame collection...</p>
+                            <a href="https://16bite-studios.itch.io/tenshi-adventure" class="project-link">Tenshi Adventure</a>
+                            <a href="https://github.com/Hubbit200/planet-gravity-sim" class="project-link">Gravity</a>
+                        </div>
+                    </div>
+                    <div class="frame">
+                        <div class="heading portfolio-header"><h3>Scheduling App & more</h3></div>
+                        <div class="content portfolio-item styled-box">
+                            <picture>
+                                <source srcset="Other.webp" type="image/webp">
+                                <img src="Other.png">
+                            </picture>
+                            <p>I've also worked on many other side-projects, such as an Android scheduling/calendar app in Java, a program to filter Instagram's DM data download by username and export a better arranged JSON, or a simple web-based Perkins braille keyboard.</p>
+                            <a href="https://github.com/Hubbit200/instagram-data-cleanup" class="project-link">Instagram Filter</a>
+                            <a href="https://github.com/Hubbit200/brailleWebsite" class="project-link">Braille</a>
                         </div>
                     </div>
                 </div>
@@ -118,7 +153,7 @@
                             <img src="HistViewer.png">
                         </picture>
                         <h3>Spotify History Analyzer</h3>
-                        <p>I decided to make this after noticing the lack of any visible statistics about my Spotify listen history. While initially a Java-based downloadable, I then ported it to Javascript and made a web version to make it easier to use. All the data processing is client-side to maintain privacy.</p>
+                        <p>I decided to make this after noticing the lack of any visible statistics about my Spotify listen history. Initially a Java-based downloadable, I then ported it to Javascript and made a web version to make it easier to use. All the data processing is client-side to maintain privacy.</p>
                         <a href="https://github.com/Hubbit200/spotify-history-parser-web" class="project-link">Github</a>
                         <a href="https://leohumnew.com/spotify" class="project-link">Try it out!</a>
                     </div>
@@ -128,7 +163,7 @@
                             <img src="ChatAnalyzer.png">
                         </picture>
                         <h3>Chat Analyzer</h3>
-                        <p>Wanting a way to see statistics about messages sent in various chat apps, I made this program which shows information about chats imported from WhatsApp, Telegram, or Instagram - such as the number of messages per user, over time, and the most common words used.</p>
+                        <p>Wanting a way to see statistics about messages sent in various apps, I made this program which shows information about chats imported from WhatsApp, Telegram, or Instagram - such as the number of messages per user, over time, and the most common words used.</p>
                         <a href="https://github.com/Hubbit200/chat-analyzer" class="project-link">Github</a>
                     </div>
                     <div class="portfolio-item styled-box">
@@ -145,9 +180,29 @@
                             <source srcset="Courses.webp" type="image/webp">
                             <img src="Courses.png">
                         </picture>
-                        <h3>CS50 and SANS</h3>
-                        <p>Originally completing Cyberstart's cybersecurity course, I've then gone on to complete SANS Foundations, CS50x, and CS50ai, learning everything from the foundations of computing and its physical components to Artificial Intelligence with Python and cyberdefense processes.</p>
+                        <h3>CS50 and SANS Foundations</h3>
+                        <p>Originally completing Cyberstart's cybersecurity course, I've then gone on to complete SANS Foundations, CS50x, and CS50ai, learning everything from the foundations of computing and its physical components to Artificial Intelligence and cyberdefense processes.</p>
                         <a href="https://courses.edx.org/certificates/da375646756c45f6bb2c22e87107002d" class="project-link">CS50x</a>
+                    </div>
+                    <div class="portfolio-item styled-box">
+                        <picture>
+                            <source srcset="Games.webp" type="image/webp">
+                            <img src="Games.png">
+                        </picture>
+                        <h3>Other projects</h3>
+                        <p>Over time I've built a large variety of demos in Unreal Engine, Unity and Processing, using C#, Java, and UE Blueprints: procedural runners and open world games, gravitational simulator, archviz projects, a VR experience, multiplayer fighters, a minigame collection...</p>
+                        <a href="https://16bite-studios.itch.io/tenshi-adventure" class="project-link">Tenshi Adventure</a>
+                        <a href="https://github.com/Hubbit200/planet-gravity-sim" class="project-link">Gravity Sim</a>
+                    </div>
+                    <div class="portfolio-item styled-box">
+                        <picture>
+                            <source srcset="Other.webp" type="image/webp">
+                            <img src="Other.png">
+                        </picture>
+                        <h3>Scheduling App & more</h3>
+                        <p>I've also worked on many other side-projects, such as an Android scheduling/calendar app in Java, a program to filter Instagram's DM data download by username and export a better arranged JSON, or a simple web-based Perkins braille keyboard.</p>
+                        <a href="https://github.com/Hubbit200/instagram-data-cleanup" class="project-link">Instagram Filter</a>
+                        <a href="https://github.com/Hubbit200/brailleWebsite" class="project-link">Braille Writer</a>
                     </div>
                 </div>
             </div>
@@ -172,22 +227,22 @@
                 </div>
                 <div class="styled-box languages-box">
                     <div class="row">
-                        <img class="cell" src="python.png">
-                        <img class="cell" src="java.png">
-                        <img class="cell" src="html.png">
-                        <img class="cell" src="js.png">
+                        <img class="cell" alt="Python" src="python.png">
+                        <img class="cell" alt="Java" src="java.png">
+                        <img class="cell" alt="HTML" src="html.png">
+                        <img class="cell" alt="JavaScript" src="js.png">
                     </div>
                     <div class="row">
-                        <img class="cell" src="css.png">
-                        <img class="cell" src="wp.png">
-                        <img class="cell" src="premiere.png">
-                        <img class="cell" src="excel.png">
+                        <img class="cell" alt="CSS" src="css.png">
+                        <img class="cell" alt="Wordpress" src="wp.png">
+                        <img class="cell" alt="Premiere Pro" src="premiere.png">
+                        <img class="cell" alt="Excel and Google Sheets" src="excel.png">
                     </div>
                     <div class="row">
-                        <img class="cell" src="ps.png">
-                        <img class="cell" src="csharp.png">
-                        <img class="cell" src="blender.png">
-                        <img class="cell" src="ue.png">
+                        <img class="cell" alt="Photoshop" src="ps.png">
+                        <img class="cell" alt="C#" src="csharp.png">
+                        <img class="cell" alt="Blender" src="blender.png">
+                        <img class="cell" alt="Unreal Engine" src="ue.png">
                     </div>
                 </div>
             </div>

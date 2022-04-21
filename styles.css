@@ -34,6 +34,7 @@ h4 {
 .bg-streak-container {
     transform: rotate(var(--angle));
     width: 120%;
+    margin-top: var(--top);
     margin-left: -10%;
 }
 .bg-streak {
@@ -138,7 +139,7 @@ h4 {
     border-radius: 1rem;
 }
 .portfolio-header {
-    width: min(90%, 42rem);
+    width: min(90%, 35rem);
     border: 2px solid var(--gray2);
     border-radius: 1rem;
     background-color: var(--gray1) !important;
@@ -178,9 +179,12 @@ h4 {
     border: 1px solid var(--primary);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
+    .bg-streak-container {
+        margin-top: calc(var(--top) + 550px);
+    }
     .portfolio-item {
-        margin: 2rem 15px;
+        margin: 1rem 0;
         border-radius: 1rem;
         border-bottom: 2px solid var(--gray2);
         border-top-width: 1px;
@@ -189,12 +193,16 @@ h4 {
         display: none;
     }
     #desktop-portfolio {
-        width: fit-content;
-        display: flex;
-        flex-wrap: wrap;
-        flex-shrink: 3;
+        margin: 0 15px;
+        display: grid;
+        justify-items: center;
         justify-content: center;
-        margin: auto 5px;
+        grid-template-columns: repeat(2, minmax(450px, 550px));
+    }
+}
+@media (min-width: 1500px) {
+    #desktop-portfolio {
+        grid-template-columns: repeat(3, minmax(450px, 600px));
     }
 }
 .languages-box div img {
