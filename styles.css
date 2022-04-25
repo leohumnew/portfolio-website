@@ -1,7 +1,7 @@
 :root {
     --primary: #fcd718;
-    --gray1: #101010;
-    --gray2: #282828;
+    --secondary1: #101010;
+    --secondary2: #282828;
 }
 
 html {
@@ -47,7 +47,7 @@ h4 {
 
 /* Header elements */
 .header-center-box {
-    background-color: var(--gray1);
+    background-color: var(--secondary1);
     width: min(70%, 26rem);
     margin: 125px auto 5px auto;
     text-align: center;
@@ -67,7 +67,7 @@ h4 {
     width: min(15rem, 70%);
     height: min(15rem, 70%);
     margin-top: -6rem;
-    border: 2px solid var(--gray2);
+    border: 2px solid var(--secondary2);
     border-radius: 50%;
 }
 #header-text {
@@ -82,7 +82,7 @@ h4 {
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
     width: min(17rem, 70vw);
-    background-color: var(--gray2);
+    background-color: var(--secondary2);
     border-radius: 1rem;
     margin: 1rem auto;
     padding: 12px 0;
@@ -108,8 +108,8 @@ h4 {
 /* Body elements */
 .styled-box {
     width: min(90%, 35rem);
-    border: 2px solid var(--gray2);
-    background-color: var(--gray1);
+    border: 2px solid var(--secondary2);
+    background-color: var(--secondary1);
     border-radius: 1rem;
     text-align: center;
     padding: 1rem;
@@ -130,7 +130,7 @@ h4 {
     margin-top: 75px;
 }
 .title-box {
-    background-color: var(--gray1);
+    background-color: var(--secondary1);
     width: min(70%, 30rem);
     margin: 0.8rem auto;
     text-align: center;
@@ -140,9 +140,9 @@ h4 {
 }
 .portfolio-header {
     width: min(90%, 35rem);
-    border: 2px solid var(--gray2);
+    border: 2px solid var(--secondary2);
     border-radius: 1rem;
-    background-color: var(--gray1) !important;
+    background-color: var(--secondary1) !important;
     margin: 0.8rem auto 0 auto;
 }
 .accordion > .frame.active > .heading {
@@ -161,7 +161,7 @@ h4 {
 .portfolio-item img {
     width: min(95%, 28rem);
     margin-bottom: 0.5rem;
-    border: 5px solid var(--gray2);
+    border: 5px solid var(--secondary2);
     border-radius: 1rem;
 }
 .portfolio-item p {
@@ -170,7 +170,7 @@ h4 {
 .project-link {
     display: inline-block;
     color: white;
-    background-color: var(--gray2);
+    background-color: var(--secondary2);
     text-decoration: none;
     font-size: larger;
     padding: 0.5rem 0.9rem;
@@ -186,7 +186,7 @@ h4 {
     .portfolio-item {
         margin: 1rem 0;
         border-radius: 1rem;
-        border-bottom: 2px solid var(--gray2);
+        border-bottom: 2px solid var(--secondary2);
         border-top-width: 1px;
     }
     .accordion {
@@ -231,23 +231,22 @@ h4 {
     border: none;
 }
 
-/* Light mode 
+/* Light mode */
 @media (prefers-color-scheme: light) {
     body {
-      background-color: rgb(240, 240, 240);
       color: black;
       font-weight: lighter;
     }
-    #bg-text {
-        color: rgb(243, 230, 214);
-    }
     .bg-streak {
-        background: linear-gradient(90deg, var(--primary) 0%, #ff9e0c 100%);
+        background: linear-gradient(90deg, var(--primary) 0%, #fca118 100%);
+    }
+    #bg {
+        background-image: url("bg_light.png");
     }
     :root {
         --primary: #c24c08;
-        --gray1: #ececec;
-        --gray2: #e4e4e4;
+        --secondary1: #f5f5f5;
+        --secondary2: #f1f1f1;
     }
     .header-sub-title {
         border: 1px solid var(--primary);
@@ -258,7 +257,7 @@ h4 {
     .portfolio-item {
         border: 1px solid var(--primary);
     }
-}*/
+}
 
 /* Other elements */
 .antispam {
