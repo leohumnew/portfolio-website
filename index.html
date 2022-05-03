@@ -5,6 +5,7 @@
         <meta name="description" content="My name is Leo. I'm a programmer and web developer, but also a video producer and editor. I keep up-to-date with the latest technologies.">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+        <meta name="color-scheme" content="dark light">
         <link rel="canonical" href="https://leohumnew.com">
         <link rel="stylesheet" type="text/css" href="parallax.min.css"> 
         <link rel="stylesheet" type="text/css" href="metro-4.4.3.min.css"> 
@@ -63,9 +64,15 @@
                 <a href="https://github.com/Hubbit200"><img src="github.png" alt="Leo's Github profile."></a>
                 <a href="#ctct"><img src="email.png" alt="Scroll to contact section."></a>
                 <a href="https://www.linkedin.com/in/leohumnew"><img src="linkedin.png" alt="Leo's Linkedin profile."></a>
-                <div class="header-sub-title" style="margin-left: -3rem; animation-name: slideInLeft;"><div><img src="phone.png" alt=""><h2 class="cell">programming</h2></div></div>
-                <div class="header-sub-title" style="margin-right: -3rem; animation-name: slideInRight;"><div><img src="envelope.png" alt=""><h2>web  design</h2></div></div>
-                <div class="header-sub-title" style="margin-left: -3rem; margin-bottom: -1.75rem; animation-name: slideInLeft;"><div><img src="camera.png" alt=""><h2>video editing</h2></div></div>
+                <div class="header-sub-title" style="margin-left: -3rem; animation-name: slideInLeft;"><div>
+                    <picture><source srcset="phone_dark.png" media="(prefers-color-scheme: light)"><img src="phone.png" alt=""></picture>
+                    <h2 class="cell">programming</h2></div></div>
+                <div class="header-sub-title" style="margin-right: -3rem; animation-name: slideInRight;"><div>
+                    <picture><source srcset="envelope_dark.png" media="(prefers-color-scheme: light)"><img src="envelope.png" alt=""></picture>
+                    <h2>web  design</h2></div></div>
+                <div class="header-sub-title" style="margin-left: -3rem; margin-bottom: -1.75rem; animation-name: slideInLeft;"><div>
+                    <picture><source srcset="camera_dark.png" media="(prefers-color-scheme: light)"><img src="camera.png" alt=""></picture>
+                    <h2>video editing</h2></div></div>
             </div>
         </header>
         
@@ -222,14 +229,29 @@
                 </div>
                 <div class="styled-box languages-box">
                     <div class="row">
-                        <img class="cell" alt="Python" src="python.png">
+                        <picture class="cell">
+                            <source srcset="python_dark.png" media="(prefers-color-scheme: light)">
+                            <img src="python.png" alt="Python">
+                        </picture>
                         <img class="cell" alt="Java" src="java.png">
-                        <img class="cell" alt="HTML" src="html.png">
-                        <img class="cell" alt="JavaScript" src="js.png">
+                        <picture class="cell">
+                            <source srcset="html_dark.png" media="(prefers-color-scheme: light)">
+                            <img src="html.png" alt="HTML">
+                        </picture>
+                        <picture class="cell">
+                            <source srcset="ue_dark.png" media="(prefers-color-scheme: light)">
+                            <img src="ue.png" alt="Unreal Engine">
+                        </picture>
                     </div>
                     <div class="row">
-                        <img class="cell" alt="CSS" src="css.png">
-                        <div class="cell" alt="Wordpress" id="wp" style="background-image: url('wp.png');"></div>
+                        <picture class="cell">
+                            <source srcset="js_dark.png" media="(prefers-color-scheme: light)">
+                            <img src="js.png" alt="JavaScript">
+                        </picture>
+                        <picture class="cell">
+                            <source srcset="wp_dark.png" media="(prefers-color-scheme: light)">
+                            <img src="wp.png" alt="Wordpress">
+                        </picture>
                         <img class="cell" alt="Premiere Pro" src="premiere.png">
                         <img class="cell" alt="Excel and Google Sheets" src="excel.png">
                     </div>
@@ -237,7 +259,10 @@
                         <img class="cell" alt="Photoshop" src="ps.png">
                         <img class="cell" alt="C#" src="csharp.png">
                         <img class="cell" alt="Blender" src="blender.png">
-                        <div class="cell" alt="Unreal Engine" id="ue" style="background-image: url('ue.png');"></div>
+                        <picture class="cell">
+                            <source srcset="css_dark.png" media="(prefers-color-scheme: light)">
+                            <img src="css.png" alt="CSS">
+                        </picture>
                     </div>
                 </div>
             </div>
@@ -247,8 +272,8 @@
                     <h2>Cont<!-- spam -->act</h2>
                 </div>
                 <div class="styled-box">
-                    <p>Feel free to email me at:<br><i>leo<!-- spam@gmail.com -->humnew03@gmai<span class="antispam">spam@yahoo.com</span>l.com</i><br><br>
-                        Or connect with me on <a href="https://www.linkedin.com/in/leohumnew">LinkedIn</a></p>
+                    <p>Feel free to email me at:<br><i>leo<!-- spam@gmail.com -->humnew<span class="antispam">@gmail.com</span>@proto<span class="antispam">spam@yahoo.com</span>nmail.com</i><br><br>
+                        Or connect with me on <a href="https://www.linkedin.com/in/leohumnew" style="color: var(--primary);">LinkedIn</a></p>
                 </div>
             </div>
         </main>

@@ -1,8 +1,10 @@
 :root {
+    color-scheme: dark light;
     --primary: #fcd718;
     --secondary-bg-1: #101010;
     --secondary-bg-2: #282828;
     --secondary-outline: #282828;
+    --is-dark-mode: 1;
 }
 
 html {
@@ -220,20 +222,25 @@ h4 {
 .languages-box div img {
     width: 18%;
 }
+.languages-box div picture img {
+    width: 100%;
+    margin: 0 0;
+}
 .languages-box > div:nth-child(2) {
     width: 85%;
     margin: 15px auto
 }
-.languages-box > div:nth-child(2) img {
+.languages-box > div:nth-child(2) > img, .languages-box > div:nth-child(2) > picture {
     margin: 0 5px;
 }
 .languages-box > div:nth-child(3) {
     width: 70%;
     margin: 15px auto
 }
-.languages-box > div:nth-child(3) img {
-    margin: 0 7px;
+.languages-box > div:nth-child(3) > img, .languages-box > div:nth-child(3) > picture {
+    margin: 0 6px;
 }
+
 #expand-arrow {
     margin-top: 10px;
     color: white;
@@ -244,7 +251,7 @@ h4 {
 }
 
 /* Light mode */
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
     #header-image {
         border-color: darkgray;
     }
@@ -260,8 +267,8 @@ h4 {
     }
     :root {
         --primary: #f39965;
-        --secondary-bg-1: #f5f5f5;
-        --secondary-bg-2: #f1f1f1;
+        --secondary-bg-1: #f9f9f9;
+        --secondary-bg-2: #f3f3f3;
         --secondary-outline: #e2e2e2;
     }
     .header-sub-title {
@@ -269,13 +276,6 @@ h4 {
     }
     .project-link {
         color: black;
-    }
-
-    #wp {
-        background-image: url("wp_dark.png") !important;
-    }
-    #ue {
-        background-image: url("ue_dark.png") !important;
     }
 }
 
