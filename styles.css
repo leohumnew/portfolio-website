@@ -30,7 +30,7 @@ h4 {
     position: absolute;
     width: 100%;
     height: 200%;
-    background-image: url("bg.png");
+    background-image: url("img/bg.png");
     background-repeat: repeat;
     background-size: 22rem;
 }
@@ -263,7 +263,7 @@ h4 {
         background: linear-gradient(90deg, var(--primary) 0%, #ffc165 100%);
     }
     #bg {
-        background-image: url("bg_light.png");
+        background-image: url("img/bg_light.png");
     }
     :root {
         --primary: #f39965;
