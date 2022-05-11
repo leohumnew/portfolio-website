@@ -1,283 +1,412 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Programming and video production | Leohumnew</title>
-        <meta name="description" content="My name is Leo. I'm a programmer and web developer, but also a video producer and editor. I keep up-to-date with the latest technologies.">
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
-        <meta name="color-scheme" content="dark light">
-        <link rel="canonical" href="https://leohumnew.com">
-        <link rel="stylesheet" type="text/css" href="parallax.min.css"> 
-        <link rel="stylesheet" type="text/css" href="metro-4.4.3.min.css"> 
-        <link rel="stylesheet" type="text/css" href="styles.css">
-    </head>
-    <body>
-        <div prx="10" id="bg"></div>
-        <div prx="3" class="no-space">
-            <div class="bg-streak-container" style="--angle:20deg; margin-top:0px">
-                <div class="row">
-                    <div class="cell-2 bg-streak"></div>
-                    <div class="cell-7 bg-streak"></div>
-                    <div class="cell bg-streak"></div>
-                </div>
-                <div class="row">
-                    <div class="cell-5 bg-streak"></div>
-                    <div class="cell bg-streak"></div>
-                </div>
-                <div class="row">
-                    <div class="cell-1 bg-streak"></div>
-                    <div class="cell-9 bg-streak"></div>
-                    <div class="cell bg-streak"></div>
+
+<head>
+    <title>Programming and video production | Leohumnew</title>
+    <meta name="description"
+        content="My name is Leo. I'm a programmer and web developer, but also a video producer and editor. I keep up-to-date with the latest technologies." />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <meta name="color-scheme" content="dark light" />
+    <link rel="canonical" href="https://leohumnew.com" />
+    <link rel="stylesheet" type="text/css" href="parallax.min.css" />
+    <link rel="stylesheet" type="text/css" href="metro-4.4.3.min.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+
+<body>
+    <div prx="10" id="bg"></div>
+    <div prx="3" class="no-space">
+        <div class="bg-streak-container" style="--angle: 20deg; margin-top: 0px">
+            <div class="row">
+                <div class="cell-2 bg-streak"></div>
+                <div class="cell-7 bg-streak"></div>
+                <div class="cell bg-streak"></div>
+            </div>
+            <div class="row">
+                <div class="cell-5 bg-streak"></div>
+                <div class="cell bg-streak"></div>
+            </div>
+            <div class="row">
+                <div class="cell-1 bg-streak"></div>
+                <div class="cell-9 bg-streak"></div>
+                <div class="cell bg-streak"></div>
+            </div>
+        </div>
+        <div class="bg-streak-container" style="--angle: -20deg; --top: 600px">
+            <div class="bg-streak"></div>
+            <div class="row">
+                <div class="cell bg-streak"></div>
+                <div class="cell bg-streak"></div>
+            </div>
+            <div class="row">
+                <div class="cell-5 bg-streak"></div>
+                <div class="cell bg-streak"></div>
+            </div>
+        </div>
+        <div class="bg-streak-container" style="--angle: 10deg; --top: 400px">
+            <div class="row">
+                <div class="cell bg-streak"></div>
+                <div class="cell bg-streak"></div>
+            </div>
+            <div class="bg-streak"></div>
+            <div class="row">
+                <div class="cell-5 bg-streak"></div>
+                <div class="cell bg-streak"></div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="header-center-box">
+            <picture>
+                <source srcset="img/face.webp" type="image/webp" />
+                <img src="img/face.png" id="header-image" alt="Headshot of Leo." />
+            </picture>
+            <h1 id="header-text">Hi, I'm Leo</h1>
+            <a href="https://github.com/Hubbit200"><img src="img/github.png" alt="Leo's Github profile." /></a>
+            <a href="#ctct"><img src="img/email.png" alt="Scroll to contact section." /></a>
+            <a href="https://www.linkedin.com/in/leohumnew"><img src="img/ln.png" alt="Leo's Linkedin profile." /></a>
+            <div class="header-sub-title" style="margin-left: -3rem; animation-name: slideInLeft">
+                <div>
+                    <picture>
+                        <source srcset="img/phone_dark.png" media="(prefers-color-scheme: light)" />
+                        <img src="img/phone.png" alt="" />
+                    </picture>
+                    <h2 class="cell">programming</h2>
                 </div>
             </div>
-            <div class="bg-streak-container" style="--angle:-20deg; --top:600px;">
-                <div class="bg-streak"></div>
-                <div class="row">
-                    <div class="cell bg-streak"></div>
-                    <div class="cell bg-streak"></div>
-                </div>
-                <div class="row">
-                    <div class="cell-5 bg-streak"></div>
-                    <div class="cell bg-streak"></div>
+            <div class="header-sub-title" style="margin-right: -3rem; animation-name: slideInRight">
+                <div>
+                    <picture>
+                        <source srcset="img/envelope_dark.png" media="(prefers-color-scheme: light)" />
+                        <img src="img/envelope.png" alt="" />
+                    </picture>
+                    <h2>web design</h2>
                 </div>
             </div>
-            <div class="bg-streak-container" style="--angle:10deg; --top:400px;">
-                <div class="row">
-                    <div class="cell bg-streak"></div>
-                    <div class="cell bg-streak"></div>
+            <div class="header-sub-title" style="
+            margin-left: -3rem;
+            margin-bottom: -1.75rem;
+            animation-name: slideInLeft;
+            ">
+                <div>
+                    <picture>
+                        <source srcset="img/camera_dark.png" media="(prefers-color-scheme: light)" />
+                        <img src="img/camera.png" alt="" />
+                    </picture>
+                    <h2>video editing</h2>
                 </div>
-                <div class="bg-streak"></div>
-                <div class="row">
-                    <div class="cell-5 bg-streak"></div>
-                    <div class="cell bg-streak"></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="section-anim" style="margin-top: 115px">
+            <div class="title-box" style="margin-bottom: 0">
+                <h2>Projects</h2>
+            </div>
+            <div class="accordion" data-role="accordion" data-show-active="false">
+                <div class="frame">
+                    <div class="heading portfolio-header">
+                        <h3>Spotify History Analyzer</h3>
+                    </div>
+                    <div class="content portfolio-item styled-box">
+                        <picture>
+                            <source srcset="img/hv.webp" type="image/webp" />
+                            <img src="img/hv.png" alt="" />
+                        </picture>
+                        <p>
+                            I decided to make this after noticing the lack of any visible
+                            statistics about my Spotify listen history. Initially a
+                            Java-based downloadable, I then ported it to Javascript and made
+                            a web version to make it easier to use. All the data processing
+                            is client-side to maintain privacy.
+                        </p>
+                        <a href="https://github.com/Hubbit200/spotify-history-parser-web"
+                            class="project-link">Github</a>
+                        <a href="https://leohumnew.com/spotify" class="project-link">Try it out!</a>
+                    </div>
+                </div>
+                <div class="frame">
+                    <div class="heading portfolio-header">
+                        <h3>Chat Analyzer</h3>
+                    </div>
+                    <div class="content portfolio-item styled-box">
+                        <picture>
+                            <source srcset="img/ChatAnalyzer.webp" type="image/webp" />
+                            <img src="img/ChatAnalyzer.png" alt="" />
+                        </picture>
+                        <p>
+                            Wanting a way to see statistics about messages sent in various
+                            apps, I made this program which shows information about chats
+                            imported from WhatsApp, Telegram, or Instagram - such as the
+                            number of messages per user, over time, and the most common
+                            words used.
+                        </p>
+                        <a href="https://github.com/Hubbit200/chat-analyzer" class="project-link">Github</a>
+                    </div>
+                </div>
+                <div class="frame">
+                    <div class="heading portfolio-header">
+                        <h3>This Portfolio Website</h3>
+                    </div>
+                    <div class="content portfolio-item styled-box">
+                        <picture>
+                            <source srcset="img/PortfolioWebsite.webp" type="image/webp" />
+                            <img src="img/PortfolioWebsite.png" alt="" />
+                        </picture>
+                        <p>
+                            Wanting to update my old WordPress website, I coded this one
+                            from scratch in HTML and CSS. It follows a mobile-first,
+                            accessible, design approach, and doing everything possible to
+                            shorten load times. It uses some components from the Parallax
+                            and Metro libraries.
+                        </p>
+                        <a href="https://github.com/Hubbit200/portfolio-website" class="project-link">Github</a>
+                    </div>
+                </div>
+                <div class="frame">
+                    <div class="heading portfolio-header">
+                        <h3>CS50 and SANS</h3>
+                    </div>
+                    <div class="content portfolio-item styled-box">
+                        <picture>
+                            <source srcset="img/Courses.webp" type="image/webp" />
+                            <img src="img/Courses.png" alt="" />
+                        </picture>
+                        <p>
+                            Originally completing Cyberstart's cybersecurity course, I've
+                            then gone on to complete SANS Foundations, CS50x, and CS50ai,
+                            learning everything from the foundations of computing and its
+                            physical components to Artificial Intelligence and cyberdefense
+                            processes.
+                        </p>
+                        <a href="https://courses.edx.org/certificates/da375646756c45f6bb2c22e87107002d"
+                            class="project-link">CS50x</a>
+                    </div>
+                </div>
+                <div class="frame">
+                    <div class="heading portfolio-header">
+                        <h3>Game projects</h3>
+                    </div>
+                    <div class="content portfolio-item styled-box">
+                        <picture>
+                            <source srcset="img/Games.webp" type="image/webp" />
+                            <img src="img/Games.png" alt="" />
+                        </picture>
+                        <p>
+                            Over time I've built a large variety of demos in Unreal Engine,
+                            Unity and Processing, using C#, Java, and UE Blueprints:
+                            procedural runners and open world games, a gravitational
+                            simulator, archviz project, VR experience, multiplayer fighters,
+                            a minigame collection...
+                        </p>
+                        <a href="https://16bite-studios.itch.io/tenshi-adventure" class="project-link">Tenshi
+                            Adventure</a>
+                        <a href="https://github.com/Hubbit200/planet-gravity-sim" class="project-link">Gravity</a>
+                    </div>
+                </div>
+                <div class="frame">
+                    <div class="heading portfolio-header">
+                        <h3>Scheduling App & more</h3>
+                    </div>
+                    <div class="content portfolio-item styled-box">
+                        <picture>
+                            <source srcset="img/Other.webp" type="image/webp" />
+                            <img src="img/Other.png" alt="" />
+                        </picture>
+                        <p>
+                            I've worked on many side-projects, such as an Android
+                            scheduling/calendar app in Java, a program to filter Instagram's
+                            DM data download by username and export a better arranged JSON,
+                            and a simple web-based Perkins braille keyboard.
+                        </p>
+                        <a href="https://github.com/Hubbit200/instagram-data-cleanup" class="project-link">Instagram
+                            Filter</a>
+                        <a href="https://github.com/Hubbit200/brailleWebsite" class="project-link">Braille</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="desktop-portfolio">
+                <div class="portfolio-item styled-box">
+                    <picture>
+                        <source srcset="img/hv.webp" type="image/webp" />
+                        <img src="img/hv.png" alt="" />
+                    </picture>
+                    <h3>Spotify History Analyzer</h3>
+                    <p>
+                        I decided to make this after noticing the lack of any visible
+                        statistics about my Spotify listen history. Initially a Java-based
+                        downloadable, I then ported it to Javascript and made a web
+                        version to make it easier to use. All the data processing is
+                        client-side to maintain privacy.
+                    </p>
+                    <a href="https://github.com/Hubbit200/spotify-history-parser-web" class="project-link">Github</a>
+                    <a href="https://leohumnew.com/spotify" class="project-link">Try it out!</a>
+                </div>
+                <div class="portfolio-item styled-box">
+                    <picture>
+                        <source srcset="img/ChatAnalyzer.webp" type="image/webp" />
+                        <img src="img/ChatAnalyzer.png" alt="" />
+                    </picture>
+                    <h3>Chat Analyzer</h3>
+                    <p>
+                        Wanting a way to see statistics about messages sent in various
+                        apps, I made this program which shows information about chats
+                        imported from WhatsApp, Telegram, or Instagram - such as the
+                        number of messages per user, over time, and the most common words
+                        used.
+                    </p>
+                    <a href="https://github.com/Hubbit200/chat-analyzer" class="project-link">Github</a>
+                </div>
+                <div class="portfolio-item styled-box">
+                    <picture>
+                        <source srcset="img/PortfolioWebsite.webp" type="image/webp" />
+                        <img src="img/PortfolioWebsite.png" alt="" />
+                    </picture>
+                    <h3>This Portfolio Website</h3>
+                    <p>
+                        Wanting to update my old WordPress website, I coded this one from
+                        scratch in HTML and CSS. It follows a mobile-first, accessible,
+                        design approach, and doing everything possible to shorten load
+                        times. It uses some components from the Parallax and Metro
+                        libraries.
+                    </p>
+                    <a href="https://github.com/Hubbit200/portfolio-website" class="project-link">Github</a>
+                </div>
+                <div class="portfolio-item styled-box">
+                    <picture>
+                        <source srcset="img/Courses.webp" type="image/webp" />
+                        <img src="img/Courses.png" alt="" />
+                    </picture>
+                    <h3>CS50 and SANS Foundations</h3>
+                    <p>
+                        Originally completing Cyberstart's cybersecurity course, I've then
+                        gone on to complete SANS Foundations, CS50x, and CS50ai, learning
+                        everything from the foundations of computing and its physical
+                        components to Artificial Intelligence and cyberdefense processes.
+                    </p>
+                    <a href="https://courses.edx.org/certificates/da375646756c45f6bb2c22e87107002d"
+                        class="project-link">CS50x</a>
+                </div>
+                <div class="portfolio-item styled-box">
+                    <picture>
+                        <source srcset="img/Games.webp" type="image/webp" />
+                        <img src="img/Games.png" alt="" />
+                    </picture>
+                    <h3>Game projects</h3>
+                    <p>
+                        Over time I've built a large variety of demos in Unreal Engine,
+                        Unity and Processing, using C#, Java, and UE Blueprints:
+                        procedural runners and open world games, a gravitational
+                        simulator, archviz projects, a VR experience, multiplayer
+                        fighters, a minigame collection...
+                    </p>
+                    <a href="https://16bite-studios.itch.io/tenshi-adventure" class="project-link">Tenshi Adventure</a>
+                    <a href="https://github.com/Hubbit200/planet-gravity-sim" class="project-link">Gravity Sim</a>
+                </div>
+                <div class="portfolio-item styled-box">
+                    <picture>
+                        <source srcset="img/Other.webp" type="image/webp" />
+                        <img src="img/Other.png" alt="" />
+                    </picture>
+                    <h3>Scheduling App & more</h3>
+                    <p>
+                        I've worked on many side-projects, such as an Android
+                        scheduling/calendar app in Java, a program to filter Instagram's
+                        DM data download by username and export a better arranged JSON, or
+                        a simple web-based Perkins braille keyboard.
+                    </p>
+                    <a href="https://github.com/Hubbit200/instagram-data-cleanup" class="project-link">Instagram
+                        Filter</a>
+                    <a href="https://github.com/Hubbit200/brailleWebsite" class="project-link">Braille Writer</a>
                 </div>
             </div>
         </div>
 
-        <header>
-            <div class="header-center-box">
-                <picture>
-                    <source srcset="face.webp" type="image/webp">
-                    <img src="face.png" id="header-image" alt="Headshot of Leo.">
-                </picture>
-                <h1 id="header-text">Hi, I'm Leo</h1>
-                <a href="https://github.com/Hubbit200"><img src="github.png" alt="Leo's Github profile."></a>
-                <a href="#ctct"><img src="email.png" alt="Scroll to contact section."></a>
-                <a href="https://www.linkedin.com/in/leohumnew"><img src="linkedin.png" alt="Leo's Linkedin profile."></a>
-                <div class="header-sub-title" style="margin-left: -3rem; animation-name: slideInLeft;"><div>
-                    <picture><source srcset="phone_dark.png" media="(prefers-color-scheme: light)"><img src="phone.png" alt=""></picture>
-                    <h2 class="cell">programming</h2></div></div>
-                <div class="header-sub-title" style="margin-right: -3rem; animation-name: slideInRight;"><div>
-                    <picture><source srcset="envelope_dark.png" media="(prefers-color-scheme: light)"><img src="envelope.png" alt=""></picture>
-                    <h2>web  design</h2></div></div>
-                <div class="header-sub-title" style="margin-left: -3rem; margin-bottom: -1.75rem; animation-name: slideInLeft;"><div>
-                    <picture><source srcset="camera_dark.png" media="(prefers-color-scheme: light)"><img src="camera.png" alt=""></picture>
-                    <h2>video editing</h2></div></div>
+        <div class="section">
+            <div class="title-box">
+                <h2>About Me</h2>
             </div>
-        </header>
-        
-        <main>
-            <div class="section-anim" style="margin-top: 115px;">
-                <div class="title-box" style="margin-bottom: 0;">
-                    <h2>Projects</h2>
-                </div>
-                <div class="accordion" data-role="accordion" data-show-active="false">
-                    <div class="frame">
-                        <div class="heading portfolio-header"><h3>Spotify History Analyzer</h3></div>
-                        <div class="content portfolio-item styled-box">
-                            <picture>
-                                <source srcset="img/HistViewer.webp" type="image/webp">
-                                <img src="img/HistViewer.png" alt="">
-                            </picture>
-                            <p>I decided to make this after noticing the lack of any visible statistics about my Spotify listen history. Initially a Java-based downloadable, I then ported it to Javascript and made a web version to make it easier to use. All the data processing is client-side to maintain privacy.</p>
-                            <a href="https://github.com/Hubbit200/spotify-history-parser-web" class="project-link">Github</a>
-                            <a href="https://leohumnew.com/spotify" class="project-link">Try it out!</a>
-                        </div>
-                    </div>
-                    <div class="frame">
-                        <div class="heading portfolio-header"><h3>Chat Analyzer</h3></div>
-                        <div class="content portfolio-item styled-box">
-                            <picture>
-                                <source srcset="img/ChatAnalyzer.webp" type="image/webp">
-                                <img src="img/ChatAnalyzer.png" alt="">
-                            </picture>
-                            <p>Wanting a way to see statistics about messages sent in various apps, I made this program which shows information about chats imported from WhatsApp, Telegram, or Instagram - such as the number of messages per user, over time, and the most common words used.</p>
-                            <a href="https://github.com/Hubbit200/chat-analyzer" class="project-link">Github</a>
-                        </div>
-                    </div>
-                    <div class="frame">
-                        <div class="heading portfolio-header"><h3>This Portfolio Website</h3></div>
-                        <div class="content portfolio-item styled-box">
-                            <picture>
-                                <source srcset="img/PortfolioWebsite.webp" type="image/webp">
-                                <img src="img/PortfolioWebsite.png" alt="">
-                            </picture>
-                            <p>Wanting to update my old WordPress website, I coded this one from scratch in HTML and CSS. It follows a mobile-first, accessible, design approach, and doing everything possible to shorten load times. It uses some components from the Parallax and Metro libraries.</p>
-                            <a href="https://github.com/Hubbit200/portfolio-website" class="project-link">Github</a>
-                        </div>
-                    </div>
-                    <div class="frame">
-                        <div class="heading portfolio-header"><h3>CS50 and SANS</h3></div>
-                        <div class="content portfolio-item styled-box">
-                            <picture>
-                                <source srcset="img/Courses.webp" type="image/webp">
-                                <img src="img/Courses.png" alt="">
-                            </picture>
-                            <p>Originally completing Cyberstart's cybersecurity course, I've then gone on to complete SANS Foundations, CS50x, and CS50ai, learning everything from the foundations of computing and its physical components to Artificial Intelligence and cyberdefense processes.</p>
-                            <a href="https://courses.edx.org/certificates/da375646756c45f6bb2c22e87107002d" class="project-link">CS50x</a>
-                        </div>
-                    </div>
-                    <div class="frame">
-                        <div class="heading portfolio-header"><h3>Game projects</h3></div>
-                        <div class="content portfolio-item styled-box">
-                            <picture>
-                                <source srcset="img/Games.webp" type="image/webp">
-                                <img src="img/Games.png" alt="">
-                            </picture>
-                            <p>Over time I've built a large variety of demos in Unreal Engine, Unity and Processing, using C#, Java, and UE Blueprints: procedural runners and open world games, a gravitational simulator, archviz project, VR experience, multiplayer fighters, a minigame collection...</p>
-                            <a href="https://16bite-studios.itch.io/tenshi-adventure" class="project-link">Tenshi Adventure</a>
-                            <a href="https://github.com/Hubbit200/planet-gravity-sim" class="project-link">Gravity</a>
-                        </div>
-                    </div>
-                    <div class="frame">
-                        <div class="heading portfolio-header"><h3>Scheduling App & more</h3></div>
-                        <div class="content portfolio-item styled-box">
-                            <picture>
-                                <source srcset="img/Other.webp" type="image/webp">
-                                <img src="img/Other.png" alt="">
-                            </picture>
-                            <p>I've also worked on many other side-projects, such as an Android scheduling/calendar app in Java, a program to filter Instagram's DM data download by username and export a better arranged JSON, or a simple web-based Perkins braille keyboard.</p>
-                            <a href="https://github.com/Hubbit200/instagram-data-cleanup" class="project-link">Instagram Filter</a>
-                            <a href="https://github.com/Hubbit200/brailleWebsite" class="project-link">Braille</a>
-                        </div>
-                    </div>
-                </div>
+            <div class="styled-box">
+                <p>
+                    Hi, I'm Leo Humphreys Newman, a developer and video editor - and an
+                    <b>enthusiastic learner</b>! I'm <b>bilingual</b> Spanish-English,
+                    and consider myself friendly and <b>easy to work with</b>. I enjoy
+                    reading, immersing myself in VR, socializing, learning about topics
+                    that interest me, and of course experimenting with coding projects -
+                    some of which you can see mentioned here on my website.
+                </p>
+                <a href="#cv" class="project-link">PDF CV</a>
+            </div>
+        </div>
 
-                <div id="desktop-portfolio">
-                    <div class="portfolio-item styled-box">
-                        <picture>
-                            <source srcset="img/HistViewer.webp" type="image/webp">
-                            <img src="img/HistViewer.png" alt="">
-                        </picture>
-                        <h3>Spotify History Analyzer</h3>
-                        <p>I decided to make this after noticing the lack of any visible statistics about my Spotify listen history. Initially a Java-based downloadable, I then ported it to Javascript and made a web version to make it easier to use. All the data processing is client-side to maintain privacy.</p>
-                        <a href="https://github.com/Hubbit200/spotify-history-parser-web" class="project-link">Github</a>
-                        <a href="https://leohumnew.com/spotify" class="project-link">Try it out!</a>
-                    </div>
-                    <div class="portfolio-item styled-box">
-                        <picture>
-                            <source srcset="img/ChatAnalyzer.webp" type="image/webp">
-                            <img src="img/ChatAnalyzer.png" alt="">
-                        </picture>
-                        <h3>Chat Analyzer</h3>
-                        <p>Wanting a way to see statistics about messages sent in various apps, I made this program which shows information about chats imported from WhatsApp, Telegram, or Instagram - such as the number of messages per user, over time, and the most common words used.</p>
-                        <a href="https://github.com/Hubbit200/chat-analyzer" class="project-link">Github</a>
-                    </div>
-                    <div class="portfolio-item styled-box">
-                        <picture>
-                            <source srcset="img/PortfolioWebsite.webp" type="image/webp">
-                            <img src="img/PortfolioWebsite.png" alt="">
-                        </picture>
-                        <h3>This Portfolio Website</h3>
-                        <p>Wanting to update my old WordPress website, I coded this one from scratch in HTML and CSS. It follows a mobile-first, accessible, design approach, and doing everything possible to shorten load times. It uses some components from the Parallax and Metro libraries.</p>
-                        <a href="https://github.com/Hubbit200/portfolio-website" class="project-link">Github</a>
-                    </div>
-                    <div class="portfolio-item styled-box">
-                        <picture>
-                            <source srcset="img/Courses.webp" type="image/webp">
-                            <img src="img/Courses.png" alt="">
-                        </picture>
-                        <h3>CS50 and SANS Foundations</h3>
-                        <p>Originally completing Cyberstart's cybersecurity course, I've then gone on to complete SANS Foundations, CS50x, and CS50ai, learning everything from the foundations of computing and its physical components to Artificial Intelligence and cyberdefense processes.</p>
-                        <a href="https://courses.edx.org/certificates/da375646756c45f6bb2c22e87107002d" class="project-link">CS50x</a>
-                    </div>
-                    <div class="portfolio-item styled-box">
-                        <picture>
-                            <source srcset="img/Games.webp" type="image/webp">
-                            <img src="img/Games.png" alt="">
-                        </picture>
-                        <h3>Other projects</h3>
-                        <p>Over time I've built a large variety of demos in Unreal Engine, Unity and Processing, using C#, Java, and UE Blueprints: procedural runners and open world games, gravitational simulator, archviz projects, a VR experience, multiplayer fighters, a minigame collection...</p>
-                        <a href="https://16bite-studios.itch.io/tenshi-adventure" class="project-link">Tenshi Adventure</a>
-                        <a href="https://github.com/Hubbit200/planet-gravity-sim" class="project-link">Gravity Sim</a>
-                    </div>
-                    <div class="portfolio-item styled-box">
-                        <picture>
-                            <source srcset="img/Other.webp" type="image/webp">
-                            <img src="img/Other.png" alt="">
-                        </picture>
-                        <h3>Scheduling App & more</h3>
-                        <p>I've also worked on many other side-projects, such as an Android scheduling/calendar app in Java, a program to filter Instagram's DM data download by username and export a better arranged JSON, or a simple web-based Perkins braille keyboard.</p>
-                        <a href="https://github.com/Hubbit200/instagram-data-cleanup" class="project-link">Instagram Filter</a>
-                        <a href="https://github.com/Hubbit200/brailleWebsite" class="project-link">Braille Writer</a>
-                    </div>
+        <div class="section">
+            <div class="title-box">
+                <h2>Experience</h2>
+            </div>
+            <div class="styled-box languages-box">
+                <div class="row">
+                    <picture class="cell">
+                        <source srcset="img/python_dark.png" media="(prefers-color-scheme: light)" />
+                        <img src="img/python.png" alt="Python" />
+                    </picture>
+                    <img class="cell" alt="Java" src="img/java.png" />
+                    <picture class="cell">
+                        <source srcset="img/html_dark.png" media="(prefers-color-scheme: light)" />
+                        <img src="img/html.png" alt="HTML" />
+                    </picture>
+                    <picture class="cell">
+                        <source srcset="img/ue_dark.png" media="(prefers-color-scheme: light)" />
+                        <img src="img/ue.png" alt="Unreal Engine" />
+                    </picture>
+                </div>
+                <div class="row">
+                    <picture class="cell">
+                        <source srcset="img/js_dark.png" media="(prefers-color-scheme: light)" />
+                        <img src="img/js.png" alt="JavaScript" />
+                    </picture>
+                    <picture class="cell">
+                        <source srcset="img/wp_dark.png" media="(prefers-color-scheme: light)" />
+                        <img src="img/wp.png" alt="Wordpress" />
+                    </picture>
+                    <img class="cell" alt="Premiere Pro" src="img/premiere.png" />
+                    <img class="cell" alt="Excel and Google Sheets" src="img/excel.png" />
+                </div>
+                <div class="row">
+                    <img class="cell" alt="Photoshop" src="img/ps.png" />
+                    <img class="cell" alt="C#" src="img/csharp.png" />
+                    <img class="cell" alt="Blender" src="img/blender.png" />
+                    <picture class="cell">
+                        <source srcset="img/css_dark.png" media="(prefers-color-scheme: light)" />
+                        <img src="img/css.png" alt="CSS" />
+                    </picture>
                 </div>
             </div>
+        </div>
 
-            <div class="section">
-                <div class="title-box">
-                    <h2>About Me</h2>
-                </div>
-                <div class="styled-box">
-                    <p>Hi, I'm Leo Humphreys Newman, a developer and video editor - and an <b>enthusiastic learner</b>! I'm <b>bilingual</b> Spanish-English, and consider myself friendly and <b>easy to work with</b>. I enjoy reading, immersing myself in VR, socializing, learning about topics that interest me, and of course experimenting with coding projects - some of which you can see mentioned here on my website.</p>
-                </div>
+        <div class="section" style="margin-bottom: 30px">
+            <div class="title-box" id="ctct">
+                <h2>Cont
+                    <!-- spam -->act
+                </h2>
             </div>
+            <div class="styled-box">
+                <p>
+                    Feel free to email me at:<br /><i>leo
+                        <!-- spam@gmail.com -->humnew<span class="antispam">@gmail.com</span>@proto<span
+                            class="antispam">spam@yahoo.com</span>nmail.com
+                    </i><br /><br />
+                    Or connect with me on
+                    <a href="https://www.linkedin.com/in/leohumnew" style="color: var(--primary)">LinkedIn</a>
+                </p>
+            </div>
+        </div>
+    </main>
 
-            <div class="section">
-                <div class="title-box">
-                    <h2>Experience</h2>
-                </div>
-                <div class="styled-box languages-box">
-                    <div class="row">
-                        <picture class="cell">
-                            <source srcset="img/python_dark.png" media="(prefers-color-scheme: light)">
-                            <img src="img/python.png" alt="Python">
-                        </picture>
-                        <img class="cell" alt="Java" src="img/java.png">
-                        <picture class="cell">
-                            <source srcset="img/html_dark.png" media="(prefers-color-scheme: light)">
-                            <img src="img/html.png" alt="HTML">
-                        </picture>
-                        <picture class="cell">
-                            <source srcset="img/ue_dark.png" media="(prefers-color-scheme: light)">
-                            <img src="img/ue.png" alt="Unreal Engine">
-                        </picture>
-                    </div>
-                    <div class="row">
-                        <picture class="cell">
-                            <source srcset="img/js_dark.png" media="(prefers-color-scheme: light)">
-                            <img src="img/js.png" alt="JavaScript">
-                        </picture>
-                        <picture class="cell">
-                            <source srcset="img/wp_dark.png" media="(prefers-color-scheme: light)">
-                            <img src="img/wp.png" alt="Wordpress">
-                        </picture>
-                        <img class="cell" alt="Premiere Pro" src="img/premiere.png">
-                        <img class="cell" alt="Excel and Google Sheets" src="img/excel.png">
-                    </div>
-                    <div class="row">
-                        <img class="cell" alt="Photoshop" src="img/ps.png">
-                        <img class="cell" alt="C#" src="img/csharp.png">
-                        <img class="cell" alt="Blender" src="img/blender.png">
-                        <picture class="cell">
-                            <source srcset="img/css_dark.png" media="(prefers-color-scheme: light)">
-                            <img src="img/css.png" alt="CSS">
-                        </picture>
-                    </div>
-                </div>
-            </div>
+    <script src="metro-4.4.3.min.js"></script>
+</body>
 
-            <div class="section" style="margin-bottom: 30px;">
-                <div class="title-box" id="ctct">
-                    <h2>Cont<!-- spam -->act</h2>
-                </div>
-                <div class="styled-box">
-                    <p>Feel free to email me at:<br><i>leo<!-- spam@gmail.com -->humnew<span class="antispam">@gmail.com</span>@proto<span class="antispam">spam@yahoo.com</span>nmail.com</i><br><br>
-                        Or connect with me on <a href="https://www.linkedin.com/in/leohumnew" style="color: var(--primary);">LinkedIn</a></p>
-                </div>
-            </div>
-        </main>
-        
-        <script src="img/metro-4.4.3.min.js"></script>
-    </body>
 </html>

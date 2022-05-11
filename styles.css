@@ -4,11 +4,11 @@
     --secondary-bg-1: #101010;
     --secondary-bg-2: #282828;
     --secondary-outline: #282828;
-    --is-dark-mode: 1;
+    font-family: 'Courier New', Tahoma, Helvetica, Arial, sans-serif !important;
 }
 
 html {
-    font-family: Helvetica, Arial, sans-serif;
+    
 }
 body {
     scroll-behavior: smooth;
