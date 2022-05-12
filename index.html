@@ -56,7 +56,7 @@
             </div>
         </div>
     </div>
-
+    <button id="btn_light" onclick="toggle_light()">LightMode</button>
     <header>
         <div class="header-center-box">
             <picture>
@@ -389,24 +389,30 @@
 
         <div class="section" style="margin-bottom: 30px">
             <div class="title-box" id="ctct">
-                <h2>Cont
-                    <!-- spam -->act
-                </h2>
+                <h2>Cont<!-- spam -->act</h2>
             </div>
             <div class="styled-box">
                 <p>
-                    Feel free to email me at:<br /><i>leo
-                        <!-- spam@gmail.com -->humnew<span class="antispam">@gmail.com</span>@proto<span
-                            class="antispam">spam@yahoo.com</span>nmail.com
-                    </i><br /><br />
+                    Feel free to email me at:<br /><i>leo<!-- spam@gmail.com -->humnew<span class="antispam">@gmail.com</span>@proto<span class="antispam">spam@yahoo.com</span>nmail.com</i><br/><br/>
                     Or connect with me on
                     <a href="https://www.linkedin.com/in/leohumnew" style="color: var(--primary)">LinkedIn</a>
                 </p>
             </div>
         </div>
     </main>
+    <script>
+        var lightEnabled = false;
+        function toggle_light(light_mode) {
+            if (light_mode != lightEnabled) {
+                lightEnabled = !lightEnabled;
+                document.documentElement.classList.toggle("light-mode");
+                document.getElementById("bg").classList.toggle("light-bg");
+            }
+        }
 
+        toggle_light(window.matchMedia("(prefers-color-scheme: light)").matches);
+        window.matchMedia("(prefers-color-scheme: light)").addListener((evt) => toggle_light(evt.matches));
+    </script>
     <script src="metro-4.4.3.min.js"></script>
 </body>
-
 </html>

@@ -1,19 +1,18 @@
 :root {
-    color-scheme: dark light;
     --primary: #fcd718;
     --secondary-bg-1: #101010;
     --secondary-bg-2: #282828;
     --secondary-outline: #282828;
-    font-family: 'Courier New', Tahoma, Helvetica, Arial, sans-serif !important;
+    --text-color: white;
 }
 
 html {
-    
+    font-family: 'Courier New', Tahoma, Helvetica, Arial, sans-serif;
 }
 body {
     scroll-behavior: smooth;
     background-color: #000000;
-    color: #FFF;
+    color: var(--text-color);
 }
 h2 {
     font-size: 1.75em;
@@ -28,7 +27,7 @@ h4 {
 /* Background elements */
 #bg {
     position: absolute;
-    width: 100%;
+    width: 102%;
     height: 200%;
     background-image: url("img/bg.png");
     background-repeat: repeat;
@@ -108,6 +107,11 @@ h4 {
     float: left;
 }
 
+#btn_light {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
 /* Body elements */
 .styled-box {
     width: min(90%, 35rem);
@@ -172,7 +176,7 @@ h4 {
 }
 .project-link {
     display: inline-block;
-    color: white;
+    color: var(--text-color);
     background-color: var(--secondary-bg-2);
     text-decoration: none;
     font-size: larger;
@@ -251,7 +255,7 @@ h4 {
 }
 
 /* Light mode */
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) { 
     #header-image {
         border-color: darkgray;
     }
@@ -279,6 +283,17 @@ h4 {
     }
 }
 
+*/ .light-mode {
+    --primary: #f39965;
+    --secondary-bg-1: #f9f9f9;
+    --secondary-bg-2: #f3f3f3;
+    --secondary-outline: #e2e2e2;
+    --text-color: black;
+}
+
+.light-bg {
+    background-image: url("img/bg_light.png") !important;
+}
 /* Other elements */
 .antispam {
     display: none;
