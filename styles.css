@@ -2,6 +2,7 @@
     --primary: #fcd718;
     --secondary-bg-1: #101010;
     --secondary-bg-2: #282828;
+    --secondary-bg-3: #d8fc18;
     --secondary-outline: #282828;
     --text-color: white;
 }
@@ -41,7 +42,7 @@ h4 {
 }
 .bg-streak {
     border-radius: 50em;
-    background: linear-gradient(90deg, var(--primary) 0%, #d8fc18 100%);
+    background: linear-gradient(90deg, var(--primary) 0%, var(--secondary-bg-3) 100%);
     margin-top: 5px;
     margin-right: 5px;
     height: 12px;
@@ -254,46 +255,47 @@ h4 {
     border: none;
 }
 
-/* Light mode */
-/* @media (prefers-color-scheme: light) { 
-    #header-image {
-        border-color: darkgray;
-    }
-    body {
-      color: black;
-      font-weight: lighter;
-    }
-    .bg-streak {
-        background: linear-gradient(90deg, var(--primary) 0%, #ffc165 100%);
-    }
-    #bg {
-        background-image: url("img/bg_light.png");
-    }
-    :root {
-        --primary: #f39965;
-        --secondary-bg-1: #f9f9f9;
-        --secondary-bg-2: #f3f3f3;
-        --secondary-outline: #e2e2e2;
-    }
-    .header-sub-title {
-        border: 1px solid var(--primary);
-    }
-    .project-link {
-        color: black;
-    }
-}
-
-*/ .light-mode {
+/* Light mode styles */
+.light-mode {
+    color-scheme: light;
     --primary: #f39965;
     --secondary-bg-1: #f9f9f9;
     --secondary-bg-2: #f3f3f3;
+    --secondary-bg-3: #fc7318;
     --secondary-outline: #e2e2e2;
     --text-color: black;
 }
-
-.light-bg {
-    background-image: url("img/bg_light.png") !important;
+.light-mode #ue {
+    content: url("img/ue_dark.png");
 }
+.light-mode #css {
+    content: url("img/css_dark.png");
+}
+.light-mode #wp {
+    content: url("img/wp_dark.png");
+}
+.light-mode #js {
+    content: url("img/js_dark.png");
+}
+.light-mode #html {
+    content: url("img/html_dark.png");
+}
+.light-mode #py {
+    content: url("img/python_dark.png");
+}
+.light-mode #phone {
+    content: url("img/phone_dark.png");
+}
+.light-mode #env {
+    content: url("img/envelope_dark.png");
+}
+.light-mode #cam {
+    content: url("img/camera_dark.png");
+}
+.light-mode #bg {
+    background-image: url("img/bg_light.png");
+}
+
 /* Other elements */
 .antispam {
     display: none;

@@ -56,7 +56,13 @@
             </div>
         </div>
     </div>
+
     <button id="btn_light" onclick="toggle_light()">LightMode</button>
+
+    <noscript>
+        <div class="title-box" style="font-size: 300%; width: 73%; border-color: red;">Please enable JavaScript in your browser</div>
+    </noscript>
+
     <header>
         <div class="header-center-box">
             <picture>
@@ -69,19 +75,13 @@
             <a href="https://www.linkedin.com/in/leohumnew"><img src="img/ln.png" alt="Leo's Linkedin profile." /></a>
             <div class="header-sub-title" style="margin-left: -3rem; animation-name: slideInLeft">
                 <div>
-                    <picture>
-                        <source srcset="img/phone_dark.png" media="(prefers-color-scheme: light)" />
-                        <img src="img/phone.png" alt="" />
-                    </picture>
+                    <img src="img/phone.png" alt="" id="phone"/>
                     <h2 class="cell">programming</h2>
                 </div>
             </div>
             <div class="header-sub-title" style="margin-right: -3rem; animation-name: slideInRight">
                 <div>
-                    <picture>
-                        <source srcset="img/envelope_dark.png" media="(prefers-color-scheme: light)" />
-                        <img src="img/envelope.png" alt="" />
-                    </picture>
+                    <img src="img/envelope.png" alt="" id="env"/>
                     <h2>web design</h2>
                 </div>
             </div>
@@ -91,10 +91,7 @@
             animation-name: slideInLeft;
             ">
                 <div>
-                    <picture>
-                        <source srcset="img/camera_dark.png" media="(prefers-color-scheme: light)" />
-                        <img src="img/camera.png" alt="" />
-                    </picture>
+                    <img src="img/camera.png" alt="" id="cam"/>
                     <h2>video editing</h2>
                 </div>
             </div>
@@ -349,29 +346,14 @@
             </div>
             <div class="styled-box languages-box">
                 <div class="row">
-                    <picture class="cell">
-                        <source srcset="img/python_dark.png" media="(prefers-color-scheme: light)" />
-                        <img src="img/python.png" alt="Python" />
-                    </picture>
+                    <img class="cell" alt="Python" src="img/python.png" id="py"/>
                     <img class="cell" alt="Java" src="img/java.png" />
-                    <picture class="cell">
-                        <source srcset="img/html_dark.png" media="(prefers-color-scheme: light)" />
-                        <img src="img/html.png" alt="HTML" />
-                    </picture>
-                    <picture class="cell">
-                        <source srcset="img/ue_dark.png" media="(prefers-color-scheme: light)" />
-                        <img src="img/ue.png" alt="Unreal Engine" />
-                    </picture>
+                    <img class="cell" alt="HTML" src="img/html.png" id="html"/>
+                    <img class="cell" alt="Unreal Engine" src="img/ue.png" id="ue"/>
                 </div>
                 <div class="row">
-                    <picture class="cell">
-                        <source srcset="img/js_dark.png" media="(prefers-color-scheme: light)" />
-                        <img src="img/js.png" alt="JavaScript" />
-                    </picture>
-                    <picture class="cell">
-                        <source srcset="img/wp_dark.png" media="(prefers-color-scheme: light)" />
-                        <img src="img/wp.png" alt="Wordpress" />
-                    </picture>
+                    <img class="cell" alt="JavaScript" src="img/js.png" id="js"/>
+                    <img class="cell" alt="Wordpress" src="img/wp.png" id="wp"/>
                     <img class="cell" alt="Premiere Pro" src="img/premiere.png" />
                     <img class="cell" alt="Excel and Google Sheets" src="img/excel.png" />
                 </div>
@@ -379,10 +361,7 @@
                     <img class="cell" alt="Photoshop" src="img/ps.png" />
                     <img class="cell" alt="C#" src="img/csharp.png" />
                     <img class="cell" alt="Blender" src="img/blender.png" />
-                    <picture class="cell">
-                        <source srcset="img/css_dark.png" media="(prefers-color-scheme: light)" />
-                        <img src="img/css.png" alt="CSS" />
-                    </picture>
+                    <img class="cell" alt="CSS" src="img/css.png" id="css"/>
                 </div>
             </div>
         </div>
@@ -406,7 +385,6 @@
             if (light_mode != lightEnabled) {
                 lightEnabled = !lightEnabled;
                 document.documentElement.classList.toggle("light-mode");
-                document.getElementById("bg").classList.toggle("light-bg");
             }
         }
 
