@@ -108,11 +108,25 @@ h4 {
     float: left;
 }
 
-#btn_light {
+#btn-light {
     position: absolute;
-    right: 15px;
-    top: 15px;
+    right: 10px;
+    top: 0px;
+    width: max(30px, min(45px, 5%));
+    height: max(30px, min(45px, 5%));
+    background-image: url("img/colorMode.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+    background-color: transparent;
+    background-position: center;
+    background-size: 100%;
+    transition: 0.2s;
 }
+#btn-light:hover {
+    background-size: 95%;
+}
+
 /* Body elements */
 .styled-box {
     width: min(90%, 35rem);
@@ -213,6 +227,10 @@ h4 {
         justify-content: center;
         grid-template-columns: repeat(2, minmax(450px, 550px));
     }
+    #btn-light {
+        right: 15px;
+        top: 15px;
+    }
 }
 @media (min-width: 1500px) {
     #desktop-portfolio {
@@ -294,6 +312,13 @@ h4 {
 }
 .light-mode #bg {
     background-image: url("img/bg_light.png");
+}
+.light-mode #btn-light {
+    background-image: url("img/colorMode_dark.png");
+}
+.light-mode .header-sub-title {
+    border: 2px solid var(--secondary-outline);
+    padding: 10px 0;
 }
 
 /* Other elements */

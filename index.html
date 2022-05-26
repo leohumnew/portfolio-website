@@ -57,7 +57,7 @@
         </div>
     </div>
 
-    <button id="btn_light" onclick="toggle_light()">LightMode</button>
+    <button id="btn-light" onclick="toggle_light()" title="Change Color Mode"></button>
 
     <noscript>
         <div class="title-box" style="font-size: 300%; width: 73%; border-color: red;">Please enable JavaScript in your browser</div>
@@ -116,9 +116,9 @@
                         <p>
                             I decided to make this after noticing the lack of any visible
                             statistics about my Spotify listen history. Initially a
-                            Java-based downloadable, I then ported it to Javascript and made
+                            Java-based program, I then ported it to Javascript and made
                             a web version to make it easier to use. All the data processing
-                            is client-side to maintain privacy.
+                            is client-side for privacy and speed.
                         </p>
                         <a href="https://github.com/Hubbit200/spotify-history-parser-web"
                             class="project-link">Github</a>
@@ -138,7 +138,7 @@
                             Wanting a way to see statistics about messages sent in various
                             apps, I made this program which shows information about chats
                             imported from WhatsApp, Telegram, or Instagram - such as the
-                            number of messages per user, over time, and the most common
+                            number of messages per user & over time, and the most common
                             words used.
                         </p>
                         <a href="https://github.com/Hubbit200/chat-analyzer" class="project-link">Github</a>
@@ -154,13 +154,54 @@
                             <img src="img/PortfolioWebsite.png" alt="" />
                         </picture>
                         <p>
-                            Wanting to update my old WordPress website, I coded this one
+                            Needing to update my old WordPress website, I coded this one
                             from scratch in HTML and CSS. It follows a mobile-first,
-                            accessible, design approach, and doing everything possible to
+                            accessible design approach, while doing everything possible to
                             shorten load times. It uses some components from the Parallax
-                            and Metro libraries.
+                            and Metro 4 libraries.
                         </p>
                         <a href="https://github.com/Hubbit200/portfolio-website" class="project-link">Github</a>
+                    </div>
+                </div>
+                <div class="frame">
+                    <div class="heading portfolio-header">
+                        <h3>Game projects</h3>
+                    </div>
+                    <div class="content portfolio-item styled-box">
+                        <picture>
+                            <source srcset="img/Games.webp" type="image/webp" />
+                            <img src="img/Games.png" alt="" />
+                        </picture>
+                        <p>
+                            Over time I've built a large variety of projects in Unreal Engine (Blueprints),
+                            Unity (C#) and Processing (Java):
+                            procedural runners and open world games, a gravitational
+                            simulator, archviz projects, VR experience, multiplayer fighters,
+                            a minigame collection...
+                        </p>
+                        <a href="https://16bite-studios.itch.io/tenshi-adventure" class="project-link">Tenshi
+                            Adventure</a>
+                        <a href="https://github.com/Hubbit200/planet-gravity-sim" class="project-link">Gravity</a>
+                    </div>
+                </div>
+                <div class="frame">
+                    <div class="heading portfolio-header">
+                        <h3>Scheduling App & more</h3>
+                    </div>
+                    <div class="content portfolio-item styled-box">
+                        <picture>
+                            <source srcset="img/Other.webp" type="image/webp" />
+                            <img src="img/Other.png" alt="" />
+                        </picture>
+                        <p>
+                            I've also worked on many smaller projects, such as an Android
+                            scheduling/calendar app (Android Studio, Java), a program to filter Instagram's
+                            DM data download by username and export a better arranged JSON,
+                            and a simple web-based Perkins braille keyboard.
+                        </p>
+                        <a href="https://github.com/Hubbit200/instagram-data-cleanup" class="project-link">Instagram
+                            Filter</a>
+                        <a href="https://github.com/Hubbit200/brailleWebsite" class="project-link">Braille</a>
                     </div>
                 </div>
                 <div class="frame">
@@ -183,47 +224,6 @@
                             class="project-link">CS50x</a>
                     </div>
                 </div>
-                <div class="frame">
-                    <div class="heading portfolio-header">
-                        <h3>Game projects</h3>
-                    </div>
-                    <div class="content portfolio-item styled-box">
-                        <picture>
-                            <source srcset="img/Games.webp" type="image/webp" />
-                            <img src="img/Games.png" alt="" />
-                        </picture>
-                        <p>
-                            Over time I've built a large variety of demos in Unreal Engine,
-                            Unity and Processing, using C#, Java, and UE Blueprints:
-                            procedural runners and open world games, a gravitational
-                            simulator, archviz project, VR experience, multiplayer fighters,
-                            a minigame collection...
-                        </p>
-                        <a href="https://16bite-studios.itch.io/tenshi-adventure" class="project-link">Tenshi
-                            Adventure</a>
-                        <a href="https://github.com/Hubbit200/planet-gravity-sim" class="project-link">Gravity</a>
-                    </div>
-                </div>
-                <div class="frame">
-                    <div class="heading portfolio-header">
-                        <h3>Scheduling App & more</h3>
-                    </div>
-                    <div class="content portfolio-item styled-box">
-                        <picture>
-                            <source srcset="img/Other.webp" type="image/webp" />
-                            <img src="img/Other.png" alt="" />
-                        </picture>
-                        <p>
-                            I've worked on many side-projects, such as an Android
-                            scheduling/calendar app in Java, a program to filter Instagram's
-                            DM data download by username and export a better arranged JSON,
-                            and a simple web-based Perkins braille keyboard.
-                        </p>
-                        <a href="https://github.com/Hubbit200/instagram-data-cleanup" class="project-link">Instagram
-                            Filter</a>
-                        <a href="https://github.com/Hubbit200/brailleWebsite" class="project-link">Braille</a>
-                    </div>
-                </div>
             </div>
 
             <div id="desktop-portfolio">
@@ -235,10 +235,10 @@
                     <h3>Spotify History Analyzer</h3>
                     <p>
                         I decided to make this after noticing the lack of any visible
-                        statistics about my Spotify listen history. Initially a Java-based
-                        downloadable, I then ported it to Javascript and made a web
-                        version to make it easier to use. All the data processing is
-                        client-side to maintain privacy.
+                            statistics about my Spotify listen history. Initially a
+                            Java-based program, I then ported it to Javascript and made
+                            a web version to make it easier to use. All the data processing
+                            is client-side for privacy and speed.
                     </p>
                     <a href="https://github.com/Hubbit200/spotify-history-parser-web" class="project-link">Github</a>
                     <a href="https://leohumnew.com/spotify" class="project-link">Try it out!</a>
@@ -253,7 +253,7 @@
                         Wanting a way to see statistics about messages sent in various
                         apps, I made this program which shows information about chats
                         imported from WhatsApp, Telegram, or Instagram - such as the
-                        number of messages per user, over time, and the most common words
+                        number of messages per user & over time, and the most common words
                         used.
                     </p>
                     <a href="https://github.com/Hubbit200/chat-analyzer" class="project-link">Github</a>
@@ -265,13 +265,45 @@
                     </picture>
                     <h3>This Portfolio Website</h3>
                     <p>
-                        Wanting to update my old WordPress website, I coded this one from
-                        scratch in HTML and CSS. It follows a mobile-first, accessible,
-                        design approach, and doing everything possible to shorten load
-                        times. It uses some components from the Parallax and Metro
-                        libraries.
+                        Needing to update my old WordPress website, I coded this one
+                            from scratch in HTML and CSS. It follows a mobile-first,
+                            accessible design approach, while doing everything possible to
+                            shorten load times. It uses some components from the Parallax
+                            and Metro 4 libraries.
                     </p>
                     <a href="https://github.com/Hubbit200/portfolio-website" class="project-link">Github</a>
+                </div>
+                <div class="portfolio-item styled-box">
+                    <picture>
+                        <source srcset="img/Games.webp" type="image/webp" />
+                        <img src="img/Games.png" alt="" />
+                    </picture>
+                    <h3>Game projects</h3>
+                    <p>
+                        Over time I've built a large variety of projects in Unreal Engine (Blueprints),
+                            Unity (C#) and Processing (Java):
+                            procedural runners and open world games, a gravitational
+                            simulator, archviz projects, VR experience, multiplayer fighters,
+                            a minigame collection...
+                    </p>
+                    <a href="https://16bite-studios.itch.io/tenshi-adventure" class="project-link">Tenshi Adventure</a>
+                    <a href="https://github.com/Hubbit200/planet-gravity-sim" class="project-link">Gravity Sim</a>
+                </div>
+                <div class="portfolio-item styled-box">
+                    <picture>
+                        <source srcset="img/Other.webp" type="image/webp" />
+                        <img src="img/Other.png" alt="" />
+                    </picture>
+                    <h3>Scheduling App & more</h3>
+                    <p>
+                        I've also worked on many smaller projects, such as an Android
+                            scheduling/calendar app (Android Studio, Java), a program to filter Instagram's
+                            DM data download by username and export a better arranged JSON,
+                            and a simple web-based Perkins braille keyboard.
+                    </p>
+                    <a href="https://github.com/Hubbit200/instagram-data-cleanup" class="project-link">Instagram
+                        Filter</a>
+                    <a href="https://github.com/Hubbit200/brailleWebsite" class="project-link">Braille Writer</a>
                 </div>
                 <div class="portfolio-item styled-box">
                     <picture>
@@ -288,44 +320,12 @@
                     <a href="https://courses.edx.org/certificates/da375646756c45f6bb2c22e87107002d"
                         class="project-link">CS50x</a>
                 </div>
-                <div class="portfolio-item styled-box">
-                    <picture>
-                        <source srcset="img/Games.webp" type="image/webp" />
-                        <img src="img/Games.png" alt="" />
-                    </picture>
-                    <h3>Game projects</h3>
-                    <p>
-                        Over time I've built a large variety of demos in Unreal Engine,
-                        Unity and Processing, using C#, Java, and UE Blueprints:
-                        procedural runners and open world games, a gravitational
-                        simulator, archviz projects, a VR experience, multiplayer
-                        fighters, a minigame collection...
-                    </p>
-                    <a href="https://16bite-studios.itch.io/tenshi-adventure" class="project-link">Tenshi Adventure</a>
-                    <a href="https://github.com/Hubbit200/planet-gravity-sim" class="project-link">Gravity Sim</a>
-                </div>
-                <div class="portfolio-item styled-box">
-                    <picture>
-                        <source srcset="img/Other.webp" type="image/webp" />
-                        <img src="img/Other.png" alt="" />
-                    </picture>
-                    <h3>Scheduling App & more</h3>
-                    <p>
-                        I've worked on many side-projects, such as an Android
-                        scheduling/calendar app in Java, a program to filter Instagram's
-                        DM data download by username and export a better arranged JSON, or
-                        a simple web-based Perkins braille keyboard.
-                    </p>
-                    <a href="https://github.com/Hubbit200/instagram-data-cleanup" class="project-link">Instagram
-                        Filter</a>
-                    <a href="https://github.com/Hubbit200/brailleWebsite" class="project-link">Braille Writer</a>
-                </div>
             </div>
         </div>
 
         <div class="section">
             <div class="title-box">
-                <h2>About Me</h2>
+                <h2>About Me & CV</h2>
             </div>
             <div class="styled-box">
                 <p>
