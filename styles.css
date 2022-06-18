@@ -1,9 +1,9 @@
 :root {
     --primary: #fcd718;
-    --secondary-bg-1: #101010;
-    --secondary-bg-2: #282828;
+    --secondary-bg-1: #161616;
+    --secondary-bg-2: #2e2e2e;
     --secondary-bg-3: #d8fc18;
-    --secondary-outline: #282828;
+    --secondary-outline: #3b3b3b;
     --text-color: white;
 }
 
@@ -201,9 +201,12 @@ h4 {
     border: 1px solid var(--primary);
     transition: 0.25s;
 }
-.project-link:hover {
+a.project-link:hover {
     padding: 0.45rem 0.8rem;
     margin: 0.65rem 0.6rem;
+    color: var(--primary);
+}
+button.project-link:hover {
     color: var(--primary);
 }
 
@@ -264,6 +267,28 @@ h4 {
     margin: 0 6px;
 }
 
+#form {
+    padding: 15px;
+    display: grid;
+    column-gap: 10px;
+}
+#form input, textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    resize: none;
+}
+#form p {
+    font-size: 80%;
+    text-align: left;
+}
+#form button {
+    width: 40%;
+    margin: 0 auto;
+}
+#message {
+    height: 8em;
+}
+
 #expand-arrow {
     margin-top: 10px;
     color: white;
@@ -322,9 +347,6 @@ h4 {
 }
 
 /* Other elements */
-.antispam {
-    display: none;
-}
 .no-space {
     height: 0;
     overflow: visible;

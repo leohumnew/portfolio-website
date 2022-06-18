@@ -57,7 +57,7 @@
         </div>
     </div>
 
-    <button id="btn-light" onclick="toggle_light()" title="Change Color Mode"></button>
+    <button id="btn-light" onclick="toggle_light()" title="Toggle dark mode"></button>
 
     <noscript>
         <div class="title-box" style="font-size: 300%; width: 73%; border-color: red;">Please enable JavaScript in your browser</div>
@@ -370,26 +370,107 @@
             <div class="title-box" id="ctct">
                 <h2>Cont<!-- spam -->act</h2>
             </div>
-            <div class="styled-box">
-                <p>
-                    Feel free to email me at:<br /><i>leo<!-- spam@gmail.com -->humnew<span class="antispam">@gmail.com</span>@proto<span class="antispam">spam@yahoo.com</span>nmail.com</i><br/><br/>
-                    Or connect with me on
-                    <a href="https://www.linkedin.com/in/leohumnew" style="color: var(--primary)">LinkedIn</a>
-                </p>
+            <div class="styled-box" style="position: relative;">
+                <div id="form">
+                    <div style="grid-column: 1;">
+                        <p>Name:</p>
+                        <input type="text" placeholder="Leo" id="name" name="name">
+                    </div>
+                    <div style="grid-column: 2;">
+                        <p>Email:</p>
+                        <input type="email" placeholder="example@email.com" id="mail" name="mail">
+                    </div>
+                    <p style="grid-column: 1 / span 2;">Message:</p>
+                    <textarea id="message" name="message" style="grid-column: 1 / span 2;"></textarea>
+                    <button class="project-link" title="Submit Contact Form" onclick="send_contact()" style="grid-column: 1 / span 2;">SEND</button>
+                </div>
+                <div id="sending" style="position: absolute; top: 80px; width: 95%; visibility: hidden;">
+                    <h3>Sending...</h3>
+                </div>
+                <div id="sent" style="position: absolute; top: 80px; width: 95%; visibility: hidden;">
+                    <h3>Sent!</h3>
+                    <p>I'll get back to you soon!</p>
+                </div>
             </div>
         </div>
     </main>
-    <script>
+
+    <script type="text/javascript">
         var lightEnabled = false;
         function toggle_light(light_mode) {
             if (light_mode != lightEnabled) {
                 lightEnabled = !lightEnabled;
-                document.documentElement.classList.toggle("light-mode");
+                $("html").toggleClass("light-mode");
             }
         }
 
-        toggle_light(window.matchMedia("(prefers-color-scheme: light)").matches);
-        window.matchMedia("(prefers-color-scheme: light)").addListener((evt) => toggle_light(evt.matches));
+        async function send_contact() {
+            const data = {
+                name: String($("#name").val()),
+                email: String($("#mail").val()),
+                message: String($("#message").val()),
+            };
+
+            if (data["name"].length < 2) {
+                alert("Name is too short");
+                return;
+            } else if (!(/^[a-zA-Z0-9+.-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9]{2,63}/.test(data["email"]))) {
+                alert("Invalid email. Please make sure it's of the format 'email@example.com'");
+                return;
+            } else if (data["message"].length < 3) {
+                alert("Message is too short");
+                return;
+            }
+
+            $("#form").visible(false);
+            $("#sending").visible(true);
+
+            fetch("ml.php", {
+                method: 'POST',
+                headers: {
+                'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data),
+            }).then(response => {
+                    if (response.status !== 200) {
+                        alert("Sending failed. Please try again or contact me on LinkedIn!");
+                        $("#sending").visible(false);
+                        $("#form").visible(true);
+                        console.log('Looks like there was a problem. Status Code: ' + response.status);
+                        return;
+                    }
+                    response.json().then(async function(data) {
+                        console.log(data);
+                        if (data["status"] == "sent") {
+                            $("#sending").visible(false);
+                            $("#sent").visible(true);
+                            $("#name").val("");
+                            $("#mail").val("");
+                            $("#message").val("");
+                            await new Promise(r => setTimeout(r, 5000));
+                            $("#sent").visible(false);
+                            $("#form").visible(true);
+                        } else {
+                            $("#sending").visible(false);
+                            $("#form").visible(true);
+                            alert("Email failed to send. Please try again or contact me on LinkedIn!");
+                        }
+                    }).catch(err => {
+                        alert("Server not responding. Please try again or contact me on LinkedIn!");
+                        console.log('JSON Parse Error: ', err);
+                        $("#sending").visible(false);
+                        $("#form").visible(true);
+                    });
+            }).catch(err => {
+                alert("Sending failed. Please try again or contact me on LinkedIn!");
+                console.log('Fetch Error :-S', err);
+                $("#sending").visible(false);
+                $("#form").visible(true);
+            });
+
+            toggle_light(window.matchMedia("(prefers-color-scheme: light)").matches);
+            window.matchMedia("(prefers-color-scheme: light)").addListener((evt) => toggle_light(evt.matches));
+        }
     </script>
     <script src="metro-4.4.3.min.js"></script>
 </body>
