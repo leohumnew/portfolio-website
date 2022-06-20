@@ -111,7 +111,7 @@ h4 {
 #btn-light {
     position: absolute;
     right: 10px;
-    top: 0px;
+    top: 5px;
     width: max(30px, min(45px, 5%));
     height: max(30px, min(45px, 5%));
     background-image: url("img/colorMode.png");
@@ -234,6 +234,10 @@ button.project-link:hover {
         right: 15px;
         top: 15px;
     }
+    #form {
+        display: grid;
+        padding: 15px;
+    }
 }
 @media (min-width: 1500px) {
     #desktop-portfolio {
@@ -268,8 +272,7 @@ button.project-link:hover {
 }
 
 #form {
-    padding: 15px;
-    display: grid;
+    padding: 5px;
     column-gap: 10px;
 }
 #form input, textarea {
@@ -286,7 +289,7 @@ button.project-link:hover {
     margin: 0 auto;
 }
 #message {
-    height: 8em;
+    height: 10em;
 }
 
 #expand-arrow {

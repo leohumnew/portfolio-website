@@ -331,7 +331,7 @@
                 <p>
                     Hi, I'm Leo Humphreys Newman, a developer and video editor - and an
                     <b>enthusiastic learner</b>! I'm <b>bilingual</b> Spanish-English,
-                    and consider myself friendly and <b>easy to work with</b>. I enjoy
+                    and consider myself friendly and <b>easy to work with</b>. I enjoy video editing,
                     reading, immersing myself in VR, socializing, learning about topics
                     that interest me, and of course experimenting with coding projects -
                     some of which you can see mentioned here on my website.
@@ -374,14 +374,14 @@
                 <div id="form">
                     <div style="grid-column: 1;">
                         <p>Name:</p>
-                        <input type="text" placeholder="Leo" id="name" name="name">
+                        <input type="text" placeholder="Name" id="name" name="name" required>
                     </div>
                     <div style="grid-column: 2;">
                         <p>Email:</p>
-                        <input type="email" placeholder="example@email.com" id="mail" name="mail">
+                        <input type="email" placeholder="example@email.com" id="mail" name="mail" required>
                     </div>
                     <p style="grid-column: 1 / span 2;">Message:</p>
-                    <textarea id="message" name="message" style="grid-column: 1 / span 2;"></textarea>
+                    <textarea id="message" name="message" style="grid-column: 1 / span 2;" required></textarea>
                     <button class="project-link" title="Submit Contact Form" onclick="send_contact()" style="grid-column: 1 / span 2;">SEND</button>
                 </div>
                 <div id="sending" style="position: absolute; top: 80px; width: 95%; visibility: hidden;">
@@ -414,11 +414,11 @@
             if (data["name"].length < 2) {
                 alert("Name is too short");
                 return;
-            } else if (!(/^[a-zA-Z0-9+.-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9]{2,63}/.test(data["email"]))) {
+            } else if (!document.getElementById("mail").checkValidity()) {
                 alert("Invalid email. Please make sure it's of the format 'email@example.com'");
                 return;
             } else if (data["message"].length < 3) {
-                alert("Message is too short");
+                alert("Message must be longer");
                 return;
             }
 
