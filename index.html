@@ -2,16 +2,40 @@
 <html lang="en">
 
 <head>
-    <title>Programming and video production | Leohumnew</title>
+    <title>Leohumnew | Programming and video production</title>
+    <meta name="title" content="Leohumnew | Programming and video production">
     <meta name="description"
-        content="My name is Leo. I'm a programmer and web developer, but also a video producer and editor. I keep up-to-date with the latest technologies." />
+        content="My name is Leo. I'm a programmer and web developer, also with experience in video editing. I keep up-to-date with the latest technologies." />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
     <meta name="color-scheme" content="dark light" />
     <link rel="canonical" href="https://leohumnew.com" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#755b53">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#efe5b1">
+    
     <link rel="stylesheet" type="text/css" href="parallax.min.css" />
     <link rel="stylesheet" type="text/css" href="metro-4.4.3.min.css" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://leohumnew.com/">
+    <meta property="og:title" content="Leohumnew | Programming and video production">
+    <meta property="og:description" content="My name is Leo. I'm a programmer and web developer, also with experience in video editing. I keep up-to-date with the latest technologies.">
+    <meta property="og:image" content="https://leohumnew.com/social-banner.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://leohumnew.com/">
+    <meta property="twitter:title" content="Leohumnew | Programming and video production">
+    <meta property="twitter:description" content="My name is Leo. I'm a programmer and web developer, also with experience in video editing. I keep up-to-date with the latest technologies.">
+    <meta property="twitter:image" content="https://leohumnew.com/social-banner.png">
 </head>
 
 <body>
@@ -179,9 +203,8 @@
                             simulator, archviz projects, VR experience, multiplayer fighters,
                             a minigame collection...
                         </p>
-                        <a href="https://16bite-studios.itch.io/tenshi-adventure" class="project-link">Tenshi
-                            Adventure</a>
                         <a href="https://github.com/Hubbit200/planet-gravity-sim" class="project-link">Gravity</a>
+                        <a href="https://16bite-studios.itch.io/tenshi-adventure" class="project-link">Tenshi</a>
                     </div>
                 </div>
                 <div class="frame">
@@ -222,6 +245,8 @@
                         </p>
                         <a href="https://courses.edx.org/certificates/da375646756c45f6bb2c22e87107002d"
                             class="project-link">CS50x</a>
+                        <a href="https://courses.edx.org/certificates/895ca661f54d4929bff8eb62c9e80ef3"
+                            class="project-link">CS50x AI</a>
                     </div>
                 </div>
             </div>
@@ -286,8 +311,8 @@
                             simulator, archviz projects, VR experience, multiplayer fighters,
                             a minigame collection...
                     </p>
-                    <a href="https://16bite-studios.itch.io/tenshi-adventure" class="project-link">Tenshi Adventure</a>
                     <a href="https://github.com/Hubbit200/planet-gravity-sim" class="project-link">Gravity Sim</a>
+                    <a href="https://16bite-studios.itch.io/tenshi-adventure" class="project-link">Tenshi Adventure</a>
                 </div>
                 <div class="portfolio-item styled-box">
                     <picture>
@@ -319,6 +344,8 @@
                     </p>
                     <a href="https://courses.edx.org/certificates/da375646756c45f6bb2c22e87107002d"
                         class="project-link">CS50x</a>
+                    <a href="https://courses.edx.org/certificates/895ca661f54d4929bff8eb62c9e80ef3"
+                        class="project-link">CS50x AI</a>
                 </div>
             </div>
         </div>
@@ -332,11 +359,11 @@
                     Hi, I'm Leo Humphreys Newman, a developer and video editor - and an
                     <b>enthusiastic learner</b>! I'm <b>bilingual</b> Spanish-English,
                     and consider myself friendly and <b>easy to work with</b>. I enjoy video editing,
-                    reading, immersing myself in VR, socializing, learning about topics
-                    that interest me, and of course experimenting with coding projects -
+                    reading, immersing myself in VR, learning about topics
+                    that interest me, video editing, and of course working on programming projects -
                     some of which you can see mentioned here on my website.
                 </p>
-                <a href="#cv" class="project-link">PDF CV</a>
+                <a href="#cv" class="project-link">PDF CV (WIP)</a>
             </div>
         </div>
 
@@ -411,14 +438,14 @@
                 message: String($("#message").val()),
             };
 
-            if (data["name"].length < 2) {
-                alert("Name is too short");
+            if (data["name"].length < 1) {
+                alert("Must enter a name");
                 return;
             } else if (!document.getElementById("mail").checkValidity()) {
                 alert("Invalid email. Please make sure it's of the format 'email@example.com'");
                 return;
-            } else if (data["message"].length < 3) {
-                alert("Message must be longer");
+            } else if (data["message"].length < 35) {
+                alert("Message must be longer!");
                 return;
             }
 
@@ -440,7 +467,6 @@
                         return;
                     }
                     response.json().then(async function(data) {
-                        console.log(data);
                         if (data["status"] == "sent") {
                             $("#sending").visible(false);
                             $("#sent").visible(true);
