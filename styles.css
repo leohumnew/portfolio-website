@@ -1,10 +1,12 @@
 :root {
+    --bg-color: black;
     --primary: #fcd718;
     --secondary-bg-1: #161616;
     --secondary-bg-2: #2e2e2e;
     --secondary-bg-3: #d8fc18;
     --secondary-outline: #3b3b3b;
     --text-color: white;
+    --secondary-text-color: rgb(160, 160, 160);
 }
 
 html {
@@ -12,7 +14,7 @@ html {
 }
 body {
     scroll-behavior: smooth;
-    background-color: #000000;
+    background-color: var(--bg-color);
     color: var(--text-color);
 }
 h2 {
@@ -29,7 +31,7 @@ h4 {
 #bg {
     position: absolute;
     width: 102%;
-    height: 220%;
+    height: 350%;
     background-image: url("img/bg.png");
     background-repeat: repeat;
     background-size: 22rem;
@@ -112,8 +114,8 @@ h4 {
     position: absolute;
     right: 10px;
     top: 5px;
-    width: max(30px, min(45px, 5%));
-    height: max(30px, min(45px, 5%));
+    width: max(30px, min(45px, 5vw));
+    height: max(30px, min(45px, 5vw));
     background-image: url("img/colorMode.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -188,6 +190,7 @@ h4 {
 }
 .portfolio-item p {
     margin: 1rem auto;
+    color: var(--secondary-text-color);
 }
 .project-link {
     display: inline-block;
@@ -304,12 +307,14 @@ button.project-link:hover {
 /* Light mode styles */
 .light-mode {
     color-scheme: light;
+    --bg-color: white;
     --primary: #f39965;
     --secondary-bg-1: #f9f9f9;
     --secondary-bg-2: #f3f3f3;
     --secondary-bg-3: #fc7318;
     --secondary-outline: #e2e2e2;
     --text-color: black;
+    --secondary-text-color: rgb(91, 91, 91);
 }
 .light-mode #ue {
     content: url("img/ue_dark.png");
