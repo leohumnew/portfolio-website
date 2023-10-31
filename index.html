@@ -386,7 +386,7 @@
                 </div>
                 <div class="row">
                     <img class="cell" alt="JavaScript" src="img/js.png" id="js" loading="lazy"/>
-                    <img class="cell" alt="Photoshop" src="img/c.png" loading="lazy"/>
+                    <img class="cell" alt="C" src="img/c.png" loading="lazy"/>
                     <img class="cell" alt="Premiere Pro" src="img/premiere.png" loading="lazy"/>
                     <img class="cell" alt="Excel and Google Sheets" src="img/excel.png" loading="lazy"/>
                 </div>
@@ -406,15 +406,17 @@
             <div class="styled-box" style="position: relative;">
                 <div id="form">
                     <div style="grid-column: 1;">
-                        <p>Name:</p>
+                        <label for="name">Name:</label>
                         <input type="text" placeholder="Name" id="name" name="name" required>
                     </div>
                     <div style="grid-column: 2;">
-                        <p>Email:</p>
+                        <label for="mail">Email:</label>
                         <input type="email" placeholder="example@email.com" id="mail" name="mail" required>
                     </div>
-                    <p style="grid-column: 1 / span 2;">Message:</p>
-                    <textarea id="message" name="message" style="grid-column: 1 / span 2;" required></textarea>
+                    <div style="grid-column: 1 / span 2;">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
                     <button class="project-link" title="Submit Contact Form" onclick="send_contact()" style="grid-column: 1 / span 2;">SEND</button>
                 </div>
                 <div id="sending" style="position: absolute; top: 80px; width: 95%; visibility: hidden;">

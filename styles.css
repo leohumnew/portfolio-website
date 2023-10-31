@@ -285,9 +285,11 @@ button.project-link:hover {
     margin-bottom: 15px;
     resize: none;
 }
-#form p {
+#form div {
+    text-align: start;
+}
+#form label {
     font-size: 80%;
-    text-align: left;
 }
 #form button {
     width: 40%;
