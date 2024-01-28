@@ -21,7 +21,6 @@
     <meta name="theme-color" content="#efe5b1">
     
     <link rel="stylesheet" type="text/css" href="parallax.min.css">
-    <link rel="stylesheet" type="text/css" href="metro-4.4.3.min.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
 
     <!-- Open Graph / Facebook -->
@@ -45,24 +44,24 @@
     <div prx="3" class="no-space">
         <div class="bg-streak-container" style="--angle: 20deg; margin-top: 0px">
             <div class="row">
-                <div class="cell-2 bg-streak"></div>
-                <div class="cell-7 bg-streak"></div>
-                <div class="cell bg-streak"></div>
-            </div>
-            <div class="row">
+                <div class="cell-3 bg-streak"></div>
                 <div class="cell-5 bg-streak"></div>
                 <div class="cell bg-streak"></div>
             </div>
             <div class="row">
-                <div class="cell-1 bg-streak"></div>
-                <div class="cell-9 bg-streak"></div>
+                <div class="cell-4 bg-streak"></div>
+                <div class="cell bg-streak"></div>
+            </div>
+            <div class="row">
+                <div class="cell-2 bg-streak"></div>
+                <div class="cell-7 bg-streak"></div>
                 <div class="cell bg-streak"></div>
             </div>
         </div>
         <div class="bg-streak-container" style="--angle: -20deg; --top: 600px">
             <div class="bg-streak"></div>
             <div class="row">
-                <div class="cell bg-streak"></div>
+                <div class="cell-3 bg-streak"></div>
                 <div class="cell bg-streak"></div>
             </div>
             <div class="row">
@@ -73,11 +72,11 @@
         <div class="bg-streak-container" style="--angle: 10deg; --top: 400px">
             <div class="row">
                 <div class="cell bg-streak"></div>
-                <div class="cell bg-streak"></div>
+                <div class="cell-3 bg-streak"></div>
             </div>
             <div class="bg-streak"></div>
             <div class="row">
-                <div class="cell-5 bg-streak"></div>
+                <div class="cell-3 bg-streak"></div>
                 <div class="cell bg-streak"></div>
             </div>
         </div>
@@ -94,7 +93,7 @@
         <div class="header-center-box">
             <picture>
                 <source srcset="img/face.webp" type="image/webp" />
-                <img src="img/face.png" id="header-image" alt="Headshot of Leo." />
+                <img src="img/face.png" id="header-image" alt="Image of Leo Humphreys Newman." />
             </picture>
             <h1 id="header-text">Hi, I'm Leo</h1>
             <a href="https://github.com/leohumnew" target="_blank"><img src="img/github.png" alt="Leo's Github profile." /></a>
@@ -363,7 +362,7 @@
             </div>
             <div class="styled-box">
                 <p>
-                    Hi, I'm Leo, a developer and video editor. I'm <b>bilingual</b> Spanish-English,
+                    Hi, I'm Leo Humphreys Newman, a developer and video editor. I'm <b>bilingual</b> Spanish-English,
                     and strive to be friendly, <b>easy to work with</b>, and an
                     <b>enthusiastic learner</b>. I enjoy video editing,
                     reading, immersing myself in VR, learning about topics
@@ -435,15 +434,15 @@
         function toggle_light(light_mode) {
             if (light_mode != lightEnabled) {
                 lightEnabled = !lightEnabled;
-                $("html").toggleClass("light-mode");
+                document.documentElement.classList.toggle("light-mode");
             }
         }
 
         async function send_contact() {
             const data = {
-                name: String($("#name").val()),
-                email: String($("#mail").val()),
-                message: String($("#message").val()),
+                name: String(document.getElementById("name").val()),
+                email: String(document.getElementById("mail").val()),
+                message: String(document.getElementById("message").val()),
             };
 
             if (data["name"].length < 1) {
@@ -457,8 +456,8 @@
                 return;
             }
 
-            $("#form").visible(false);
-            $("#sending").visible(true);
+            document.getElementById("form").visible(false);
+            document.getElementById("sending").visible(true);
 
             fetch("ml.php", {
                 method: 'POST',
@@ -469,43 +468,42 @@
             }).then(response => {
                     if (response.status !== 200) {
                         alert("Sending failed. Please try again or contact me on LinkedIn!");
-                        $("#sending").visible(false);
-                        $("#form").visible(true);
+                        document.getElementById("sending").visible(false);
+                        document.getElementById("form").visible(true);
                         console.log('Looks like there was a problem. Status Code: ' + response.status);
                         return;
                     }
                     response.json().then(async function(data) {
                         if (data["status"] == "sent") {
-                            $("#sending").visible(false);
-                            $("#sent").visible(true);
-                            $("#name").val("");
-                            $("#mail").val("");
-                            $("#message").val("");
+                            document.getElementById("sending").visible(false);
+                            document.getElementById("sent").visible(true);
+                            document.getElementById("name").val("");
+                            document.getElementById("mail").val("");
+                            document.getElementById("message").val("");
                             await new Promise(r => setTimeout(r, 5000));
-                            $("#sent").visible(false);
-                            $("#form").visible(true);
+                            document.getElementById("sent").visible(false);
+                            document.getElementById("form").visible(true);
                         } else {
-                            $("#sending").visible(false);
-                            $("#form").visible(true);
+                            document.getElementById("sending").visible(false);
+                            document.getElementById("form").visible(true);
                             alert("Email failed to send. Please try again or contact me on LinkedIn!");
                         }
                     }).catch(err => {
                         alert("Server not responding. Please try again or contact me on LinkedIn!");
                         console.log('JSON Parse Error: ', err);
-                        $("#sending").visible(false);
-                        $("#form").visible(true);
+                        document.getElementById("sending").visible(false);
+                        document.getElementById("form").visible(true);
                     });
             }).catch(err => {
                 alert("Sending failed. Please try again or contact me on LinkedIn!");
                 console.log('Fetch Error :-S', err);
-                $("#sending").visible(false);
-                $("#form").visible(true);
+                document.getElementById("sending").visible(false);
+                document.getElementById("form").visible(true);
             });
 
             toggle_light(window.matchMedia("(prefers-color-scheme: light)").matches);
             window.matchMedia("(prefers-color-scheme: light)").addListener((evt) => toggle_light(evt.matches));
         }
     </script>
-    <script src="metro-4.4.3.min.js"></script>
 </body>
 </html>
