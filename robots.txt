@@ -1,4 +1,11 @@
 User-agent: *
-Allow: /
+Disallow: /Legacy23Certificate.pdf
+Disallow: /UCDAdvantage_LeoHN.pdf
+Disallow: /SANSCertificate.pdf
+
+User-agent: AdsBot-Google
+Disallow: /Legacy23Certificate.pdf
+Disallow: /UCDAdvantage_LeoHN.pdf
+Disallow: /SANSCertificate.pdf
 
 Sitemap: https://leohumnew.com/sitemap.xml
