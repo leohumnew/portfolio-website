@@ -3,7 +3,7 @@
 
 <head>
     <title>Leohumnew | Programming and video production</title>
-    <meta name="title" content="Leohumnew | Programming and video production">
+    <meta name="title" content="LeoHumNew | Programming and video production">
     <meta name="description" content="My name is Leo Humphreys Newman. I'm a programmer and web developer, also with experience in video editing. I keep up-to-date with the latest technologies.">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
@@ -27,14 +27,14 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://leohumnew.com/">
-    <meta property="og:title" content="Leohumnew | Programming and video production">
+    <meta property="og:title" content="LeoHumNew | Programming and video production">
     <meta property="og:description" content="My name is Leo. I'm a programmer and web developer, also with experience in video editing. I keep up-to-date with the latest technologies.">
     <meta property="og:image" content="https://leohumnew.com/social-banner.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://leohumnew.com/">
-    <meta property="twitter:title" content="Leohumnew | Programming and video production">
+    <meta property="twitter:title" content="LeoHumNew | Programming and video production">
     <meta property="twitter:description" content="My name is Leo. I'm a programmer and web developer, also with experience in video editing. I keep up-to-date with the latest technologies.">
     <meta property="twitter:image" content="https://leohumnew.com/social-banner.png">
 </head>
@@ -83,7 +83,7 @@
         </div>
     </div>
 
-    <button id="btn-light" onclick="toggle_light()" title="Toggle dark mode"></button>
+    <button id="btn-light" onclick="toggle_light()" title="Toggle dark mode" type="button"></button>
 
     <noscript>
         <div class="title-box" style="font-size: 300%; width: 73%; border-color: red;">Please enable JavaScript in your browser</div>
@@ -127,11 +127,104 @@
 
     <main>
         <div class="section-anim" style="margin-top: 115px">
-            <div class="title-box" style="margin-bottom: 0">
+            <div class="title-box">
+                <h2>About Me & CV</h2>
+            </div>
+            <div class="styled-box">
+                <p>
+                    Hi, I'm Leo Humphreys Newman, a developer and video editor. I'm <b>bilingual</b> Spanish-English,
+                    and strive to be friendly, <b>easy to work with</b>, and an
+                    <b>enthusiastic learner</b>. I enjoy video editing,
+                    reading, 3D modelling and VR, learning about topics
+                    of interest, and of course working on programming projects -
+                    some of which you can see here on my website.<br>For my CV, please contact me on <a href="https://www.linkedin.com/in/leohumnew" target="_blank">LinkedIn</a> or through the form below!<br>
+                </p>
+            </div>
+        </div>
+
+        <div class="section-anim">
+            <div class="title-box">
+                <h2>Experience</h2>
+            </div>
+
+            <div id="portfolio-section" class="experience">
+                <div class="portfolio-item styled-box">
+                    <div class="portfolio-item-header" onclick="open_section(this)">
+                        <img src="img/downArrow.png" alt="" />
+                        <h3>Innovation Academy</h3>
+                    </div>
+                    <div class="portfolio-item-content"><div>
+                        <picture>
+                            <source srcset="img/IA.webp" type="image/webp" />
+                            <img src="img/IA.png" alt="Image of my Innovation Academy job." />
+                        </picture>
+                        <h3>Innovation Academy</h3>
+                        <p>
+                            Working at the <a href="https://www.innovationacademy.ie/">UCD Innovation Academy</a>, I've been in charge of handling time-sensitive projects for external clients, assisting team members with running classes and workshops, planning, 3D modelling, and manufacturing a diverse range of items, and more.
+                        </p>
+                        <h2 class="project-link">2024 - Present</h2>
+                    </div></div>
+                </div>
+                <div class="portfolio-item styled-box">
+                    <div class="portfolio-item-header" onclick="open_section(this)">
+                        <img src="img/downArrow.png" alt="" />
+                        <h3>Mentoring & Orientation</h3>
+                    </div>
+                    <div class="portfolio-item-content"><div>
+                        <picture>
+                            <source srcset="img/JSocPeerMentoring.webp" type="image/webp" />
+                            <img src="img/JSocPeerMentoring.png" alt="Image of the Japanese Society and Peer mentoring." />
+                        </picture>
+                        <h3>Leadership & Mentoring</h3>
+                        <p>
+                            President of the UCD Japanese Society, managing finance, events, and embassy relations, with the aim of welcoming foreign students and creating an inclusive cultural environment. I also have extensive experience in both Peer Mentor and Orientation roles.
+                        </p>
+                        <h2 class="project-link">2023 - Present</h2>
+                    </div></div>
+                </div>
+                <div class="portfolio-item styled-box">
+                    <div class="portfolio-item-header" onclick="open_section(this)">
+                        <img src="img/downArrow.png" alt="" />
+                        <h3>Video Editing</h3>
+                    </div>
+                    <div class="portfolio-item-content"><div>
+                        <picture>
+                            <source srcset="img/Videography.webp" type="image/webp" />
+                            <img src="img/Videography.png" alt="Image of video projects." />
+                        </picture>
+                        <h3>Video Editing</h3>
+                        <p>
+                            Filmed and edited over 20 promotional, educational, and historical videos for a professor at the University of Seville, Spain. I was also part of a filmmaking group where we created award-winning short films and documentaries.
+                        </p>
+                        <h2 class="project-link">2019 - Present</h2>
+                    </div></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-anim">
+            <div class="title-box">
                 <h2>Projects</h2>
             </div>
 
             <div id="portfolio-section">
+                <div class="portfolio-item styled-box">
+                    <div class="portfolio-item-header" onclick="open_section(this)">
+                        <img src="img/downArrow.png" alt="" />
+                        <h3>Reality Explorer</h3>
+                    </div>
+                    <div class="portfolio-item-content"><div>
+                        <picture>
+                            <source srcset="img/RealityExplorer.webp" type="image/webp" />
+                            <img src="img/RealityExplorer.png" alt="Image of the Reality Explorer project." />
+                        </picture>
+                        <h3>Reality Explorer</h3>
+                        <p>
+                            Created a complex interactive 3D + Augmented Reality platform for use by a university, providing a modern and engaging way to explore everything from biology to medieval structures. A web-based project, using Babylon.js and AR.js, and with a focus on speed and flexibility.
+                        </p>
+                        <a disabled class="project-link">Check it out! (coming soon)</a>
+                    </div></div>
+                </div>
                 <div class="portfolio-item styled-box">
                     <div class="portfolio-item-header" onclick="open_section(this)">
                         <img src="img/downArrow.png" alt="" />
@@ -157,27 +250,6 @@
                 <div class="portfolio-item styled-box">
                     <div class="portfolio-item-header" onclick="open_section(this)">
                         <img src="img/downArrow.png" alt="" />
-                        <h3>Chat Analyzer</h3>
-                    </div>
-                    <div class="portfolio-item-content"><div>
-                        <picture>
-                            <source srcset="img/ChatAnalyzer.webp" type="image/webp" />
-                            <img src="img/ChatAnalyzer.png" alt="Image of the Chat Analyzer project." />
-                        </picture>
-                        <h3>Chat Analyzer</h3>
-                        <p>
-                            Wanting a way to see statistics about messages sent in various
-                            apps, I made this program which shows information about chats
-                            imported from WhatsApp, Telegram, or Instagram - such as the
-                            number of messages per user & over time, and the most common words
-                            used.
-                        </p>
-                        <a href="https://github.com/leohumnew/chat-analyzer" class="project-link">Github</a>
-                    </div></div>
-                </div>
-                <div class="portfolio-item styled-box">
-                    <div class="portfolio-item-header" onclick="open_section(this)">
-                        <img src="img/downArrow.png" alt="" />
                         <h3>This Portfolio Website</h3>
                     </div>
                     <div class="portfolio-item-content"><div>
@@ -194,6 +266,27 @@
                                 and Metro 4 libraries.
                         </p>
                         <a href="https://github.com/leohumnew/portfolio-website" class="project-link">Github</a>
+                    </div></div>
+                </div>
+                <div class="portfolio-item styled-box">
+                    <div class="portfolio-item-header" onclick="open_section(this)">
+                        <img src="img/downArrow.png" alt="" />
+                        <h3>Chat Analyzer</h3>
+                    </div>
+                    <div class="portfolio-item-content"><div>
+                        <picture>
+                            <source srcset="img/ChatAnalyzer.webp" type="image/webp" />
+                            <img src="img/ChatAnalyzer.png" alt="Image of the Chat Analyzer project." />
+                        </picture>
+                        <h3>Chat Analyzer</h3>
+                        <p>
+                            Wanting a way to see statistics about messages sent in various
+                            apps, I made this program which shows information about chats
+                            imported from WhatsApp, Telegram, or Instagram - such as the
+                            number of messages per user & over time, and the most common words
+                            used.
+                        </p>
+                        <a href="https://github.com/leohumnew/chat-analyzer" class="project-link">Github</a>
                     </div></div>
                 </div>
                 <div class="portfolio-item styled-box">
@@ -240,6 +333,30 @@
                         <a href="https://github.com/leohumnew/brailleWebsite" class="project-link">Braille Writer</a>
                     </div></div>
                 </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="title-box">
+                <h2>Certificates and Education</h2>
+            </div>
+
+            <div id="portfolio-section" class="col-2">
+                <div class="portfolio-item styled-box">
+                    <div class="portfolio-item-header" onclick="open_section(this)">
+                        <img src="img/downArrow.png" alt="" />
+                        <h3>Education</h3>
+                    </div>
+                    <div class="portfolio-item-content"><div>
+                        <picture>
+                            <source srcset="img/UCD.webp" type="image/webp" />
+                            <img src="img/UCD.png" alt="Image of the CS50 and SANS Foundations certificates." />
+                        </picture>
+                        <h3>Education</h3>
+                        <p>
+                            Currently pursuing a degree in Computer Science at University College Dublin, covering everything from the foundations and physical elements of computing and assembly, to machine learning, databases, and more. I've completed small and large projects, in groups and individually.
+                        </p>
+                    </div></div>
+                </div>
                 <div class="portfolio-item styled-box">
                     <div class="portfolio-item-header" onclick="open_section(this)">
                         <img src="img/downArrow.png" alt="" />
@@ -265,22 +382,6 @@
                             class="project-link">CS50x AI</a>
                     </div></div>
                 </div>
-            </div>
-        </div>
-
-        <div class="section">
-            <div class="title-box">
-                <h2>About Me & CV</h2>
-            </div>
-            <div class="styled-box">
-                <p>
-                    Hi, I'm Leo Humphreys Newman, a developer and video editor. I'm <b>bilingual</b> Spanish-English,
-                    and strive to be friendly, <b>easy to work with</b>, and an
-                    <b>enthusiastic learner</b>. I enjoy video editing,
-                    reading, immersing myself in VR, learning about topics
-                    of interest, and of course working on programming projects -
-                    some of which you can see mentioned here on my website.<br>For my CV, please contact me through the form below!<br>
-                </p>
             </div>
         </div>
 
@@ -356,9 +457,9 @@
 
         async function send_contact() {
             const data = {
-                name: String(document.getElementById("name").val()),
-                email: String(document.getElementById("mail").val()),
-                message: String(document.getElementById("message").val()),
+                name: String(document.getElementById("name").value),
+                email: String(document.getElementById("mail").value),
+                message: String(document.getElementById("message").value)
             };
 
             if (data["name"].length < 1) {
@@ -372,8 +473,8 @@
                 return;
             }
 
-            document.getElementById("form").visible(false);
-            document.getElementById("sending").visible(true);
+            document.getElementById("form").style.visibility = "hidden";
+            document.getElementById("sending").style.visibility = "visible";
 
             fetch("ml.php", {
                 method: 'POST',
@@ -384,37 +485,37 @@
             }).then(response => {
                     if (response.status !== 200) {
                         alert("Sending failed. Please try again or contact me on LinkedIn!");
-                        document.getElementById("sending").visible(false);
-                        document.getElementById("form").visible(true);
+                        document.getElementById("sending").style.visibility = "hidden";
+                        document.getElementById("form").style.visibility = "visible";
                         console.log('Looks like there was a problem. Status Code: ' + response.status);
                         return;
                     }
                     response.json().then(async function(data) {
                         if (data["status"] == "sent") {
-                            document.getElementById("sending").visible(false);
-                            document.getElementById("sent").visible(true);
-                            document.getElementById("name").val("");
-                            document.getElementById("mail").val("");
-                            document.getElementById("message").val("");
-                            await new Promise(r => setTimeout(r, 5000));
-                            document.getElementById("sent").visible(false);
-                            document.getElementById("form").visible(true);
+                            document.getElementById("sending").style.visibility = "hidden";
+                            document.getElementById("sent").style.visibility = "visible";
+                            document.getElementById("name").value = "";
+                            document.getElementById("mail").value = "";
+                            document.getElementById("message").value = "";
+                            await new Promise(r => setTimeout(r, 10000));
+                            document.getElementById("sent").style.visibility = "hidden";
+                            document.getElementById("form").style.visibility = "visible";
                         } else {
-                            document.getElementById("sending").visible(false);
-                            document.getElementById("form").visible(true);
+                            document.getElementById("sending").style.visibility = "hidden";
+                            document.getElementById("form").style.visibility = "visible";
                             alert("Email failed to send. Please try again or contact me on LinkedIn!");
                         }
                     }).catch(err => {
                         alert("Server not responding. Please try again or contact me on LinkedIn!");
                         console.log('JSON Parse Error: ', err);
-                        document.getElementById("sending").visible(false);
-                        document.getElementById("form").visible(true);
+                        document.getElementById("sending").style.visibility = "hidden";
+                        document.getElementById("form").style.visibility = "visible";
                     });
             }).catch(err => {
                 alert("Sending failed. Please try again or contact me on LinkedIn!");
                 console.log('Fetch Error :-S', err);
-                document.getElementById("sending").visible(false);
-                document.getElementById("form").visible(true);
+                document.getElementById("sending").style.visibility = "hidden";
+                document.getElementById("form").style.visibility = "visible";
             });
 
             toggle_light(window.matchMedia("(prefers-color-scheme: light)").matches);
